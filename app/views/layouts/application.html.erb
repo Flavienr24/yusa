@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Yusa</title>
+    <title>Yusa • Digital Transformation, UX Design, Branding • Marseille</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,63 @@
   </head>
 
   <body>
+    <!-- global container -->
+    <div class="layout-container">
+
+      <!-- header -->
+      <div class="header">
+        <div class="yusa-logo">
+          LOGO
+        </div>
+        <div class="burger-icon">
+          Menu
+        </div>
+      </div>
+
+    <!-- content import -->
     <%= yield %>
+    <!-- contact -->
+      <div class="content-container bg-dark">
+        <div class="big-title pb-4 pt-4">Vous avez un projet ?</div>
+        <div class="rubrique-description bottom-space">Echangeons !</div>
+        <a class="contact-email" href="mailto:contact@yusa.digital">contact@yusa.digital</a>
+      </div>
+
+      <!-- FAQ -->
+      <div class="content-container pb-3 bg-light card-bottom-rounded">
+        <h3 class="bottom-space">Les questions les plus fréquentes posées par nos clients.</h3>
+        <div class="card-faq">
+          <h2>Question posée par des clients</h2>
+          <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
+        </div>
+        <div class="card-faq">
+          <h2>Question posée par des clients</h2>
+          <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
+        </div>
+        <div class="card-faq">
+          <h2>Question posée par des clients</h2>
+          <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
+        </div>
+        <div class="card-faq">
+          <h2>Question posée par des clients</h2>
+          <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
+        </div>
+      </div>
+
+    <!-- footer -->
+      <div class="footer content-container bg-black pb-3">
+        <div class="social">
+          <!-- social icons -->
+        </div>
+        <p class="bottom-space">Culpa fugiat reprehenderit enim sunt nulla irure aliquip nisi eu Lorem tempor nulla sit Lorem aliquip exercitation anim enim nisi.</p>
+        <p class="mb-0">Fabriqué avec 💙 à Marseille</p>
+        <div class="dynamic-location bottom-space">
+          <h3>à 150 m de la Méditérannée</h3>
+        </div>
+        <a class="contact-email mb-4" href="mailto:contact@yusa.digital">contact@yusa.digital</a>
+        <div class="description top-space">Yusa® - 203 Corniche du Président John Fitzgerald Kennedy 13007 Marseille</div>
+      </div>
+    </div>
+    <%= javascript_pack_tag "application" %>
   </body>
 </html>

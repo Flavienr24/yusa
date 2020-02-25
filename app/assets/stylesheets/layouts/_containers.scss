@@ -1,0 +1,49 @@
+.layout-container {
+  width: 100%;
+  min-width: 250px;
+}
+
+.content-container {
+  padding: 60px 16% 96px 16%;
+}
+
+.top-space {
+  padding-top: 62px;
+}
+
+.bottom-space {
+  padding-bottom: 48px;
+}
+
+.home-banner {
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20vh;
+}
+
+// ---------- Offers grid -----------
+.offers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 64px;
+}
+
+@media(min-width: 760px) {
+  // Desktop
+  .offers-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow:dense;
+    grid-gap: 88px;
+    padding-top: 96px;
+  }
+}
+
+// ------------ About section -----------
+// @media(min-width: 760px) {
+  // Desktop
+  .about {
+    min-height: 70vh;
+    //?? centrer le contenu dans la div
+  }
+// }

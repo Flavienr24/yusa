@@ -1,0 +1,106 @@
+  body {
+    color: $black;
+    font-family: 'Quicksand', 'Helvetica', sans-serif;
+
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+// --------- H1 ------------
+  // Tablet
+  @media(max-width: 400px) {
+    h1 {
+      // font-style: normal;
+      font-weight: 500;
+      font-size: 1.8em;
+      line-height: 32px;
+    }
+  }
+
+  // Desktop
+  @media(min-width: 760px) {
+    h1 {
+        font-weight: 400;
+        font-size: 4em;
+        line-height: 75px;
+    }
+  }
+
+  // ----------------------------
+
+  h2 {
+    // font-style: normal;
+    font-weight: 200;
+    font-size: 1.375em;
+    line-height: 32px;
+  }
+
+  h3 {
+    // font-style: normal;
+    font-weight: bold;
+    font-size: 1.375em;
+    line-height: 28px;
+  }
+
+  .p-bold {
+    // font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 20px;
+  }
+
+  p {
+    // font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 24px;
+  }
+
+  .description {
+    // font-style: normal;
+    font-weight: 300;
+    font-size: 0.75em;
+    line-height: 20px;
+  }
+
+  .big-title {
+    // font-style: normal;
+    font-weight: 900;
+    font-size: 2.5em;
+    line-height: 43px;
+  }
+
+  .rubrique-title {
+    // font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 42px;
+  }
+
+  .rubrique-description {
+    // font-style: normal;
+    font-weight: 200;
+    font-size: 1.375em;
+    line-height: 28px;
+  }
+
+  .contact-email {
+    // font-style: normal;
+    font-weight: normal;
+    font-size: 1.25em;
+    line-height: 28px;
+    text-decoration-line: underline;
+    display: block;
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+
+
+

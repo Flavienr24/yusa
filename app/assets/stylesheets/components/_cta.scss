@@ -1,0 +1,41 @@
+
+
+// Faire forme CTA et style à part
+
+.cta-primary {
+  display: block;
+  width: 120px;
+  margin: 64px auto 0px auto;
+  padding: 8px 32px;
+  background-color: $white;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.75em;
+  line-height: 20px;
+  color: $black;
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.cta-primary-emphaze {
+  display: block;
+  width: 120px;
+  margin: 64px auto 0px auto;
+  padding: 8px 32px;
+  background-color: $yellow;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.75em;
+  line-height: 20px;
+  color: $black;
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+

@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cases</h1>
+
+<% @cases.each do |c| %>
+<div class="m-4">
+  <h2><%= c.client_name %></h2>
+  <%= c.title %>
+  <%= c.main_image %>
+  <%= link_to 'Show', c %>
+  <%= link_to 'Edit', edit_case_path(c) %>
+  <%= link_to 'Destroy', c, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+<% end %>
+
+<br>
+
+<%= link_to 'New Case', new_case_path %>

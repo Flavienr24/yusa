@@ -9,6 +9,7 @@ class ArticlesController < ApplicationController
     # GET /articles/:id
     #@article = article.find(params[:id]) => défini par :set_article
     #pareil pour EDIT, UPDATE et DESTROY
+      @articles = Article.all.order("created_at DESC").where.not(id:(params[:id]))
     end
 
     def new

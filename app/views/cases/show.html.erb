@@ -9,4 +9,13 @@
 
 <%= link_to 'Edit', edit_case_path(@case) %> |
 <%= link_to 'Back', cases_path %>
+
+<% @cases.limit(3).each do |c| %>
+  <div class="card-article">
+    <%= image_tag(c.main_image, class: 'full-width') %>
+    <h3><%= c.client_name %></h3>
+  </div>
+<% end %>
+<%= link_to 'Voir plus', cases_path, class: 'cta-primary' %>
+
 </div>

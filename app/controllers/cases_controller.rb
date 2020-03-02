@@ -8,6 +8,7 @@ class CasesController < ApplicationController
 
   # GET /cases/1
   def show
+    @cases = Case.all.order("created_at DESC").where.not(id:(params[:id]))
   end
 
   # GET /cases/new

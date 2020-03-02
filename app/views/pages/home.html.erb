@@ -56,10 +56,9 @@
     </div>
     <!-- Clients cards -->
     <!-- Index frist 3 clients -->
-    <% @cases.each do |c| %>
+    <% @cases.limit(5).each do |c| %>
       <div class="card-p-bottom">
         <%= link_to case_path(c) do %>
-          <!-- img -->
           <%= image_tag(c.main_image, class: 'full-width') %>
           <!-- nom client -->
           <h3><%= c.client_name %></h3>
@@ -74,7 +73,7 @@
       <p>Echangeons !</p>
     </div>
     <a class="contact-email" style="color: black;" href="mailto:contact@yusa.digital">contact@yusa.digital</a>
-    <a class="cta-primary" href="#">Voir plus</a>
+    <%= link_to 'Voir plus', cases_path, class: 'cta-primary' %>
   </div>
 </div>
 
@@ -82,18 +81,20 @@
 <div class="bg-black content-container">
   <div class="about">
     <div class="rubrique-description">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</div>
-    <a class="cta-primary-emphaze" href="about">YUSA ?</a>
+    <%= link_to 'YUSA ?', about_path, class: 'cta-primary-emphaze' %>
   </div>
 </div>
 
 <!-- News -->
 <div class="content-container pb-3">
   <!-- Index first 3 articles -->
-  <div class="card-article">
-    <!-- img -->
-    <!-- title -->
-    <!-- date -->
-    <a class="cta-primary" href="#">Voir plus</a>
-  </div>
+  <% @articles.limit(3).each do |a| %>
+    <div class="card-article">
+      <%= image_tag(a.main_image, class: 'full-width') %>
+      <h3><%= a.title %></h3>
+      <span class="description"><%= l(a.created_at, locale: :fr, format: "%d %B %Y") %></span>
+    </div>
+  <% end %>
+    <%= link_to 'Voir plus', articles_path, class: 'cta-primary' %>
 </div>
 

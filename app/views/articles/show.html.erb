@@ -9,5 +9,15 @@
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
+
+  <!-- Index first 3 articles -->
+  <% @articles.limit(3).each do |a| %>
+    <div class="card-article">
+      <%= image_tag(a.main_image, class: 'full-width') %>
+      <h3><%= a.title %></h3>
+      <span class="description"><%= l(a.created_at, locale: :fr, format: "%d %B %Y") %></span>
+    </div>
+  <% end %>
+    <%= link_to 'Voir plus', articles_path, class: 'cta-primary' %>
 </div>
 

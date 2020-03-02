@@ -1,0 +1,24 @@
+<div class="content-container home-banner">
+  <h1 class="landing-text">Intro sur les articles du blog qui sont écrits ici</h1>
+</div>
+
+<!-- Articles -->
+<div class="grid-cases">
+  <% @articles.each do |a| %>
+    <div class="card-client">
+      <%= link_to article_path(a) do %>
+      <%= image_tag(a.main_image, class: 'full-width') %>
+      <div class="content-container">
+        <h2 class="rubrique-title"><%= a.title %></h2>
+
+        <!-- If user authenticate -->
+        <%= link_to 'Edit', edit_article_path(a) %>
+        <%= link_to 'Destroy', a, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to 'New Case', new_article_path %>
+<%= render 'newsletter', model: @article %>

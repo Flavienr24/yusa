@@ -40,6 +40,11 @@
     line-height: 32px;
   }
 
+  .trix-content h1 {
+    @extend h2;
+  }
+
+
   h3 {
     // font-style: normal;
     font-weight: bold;

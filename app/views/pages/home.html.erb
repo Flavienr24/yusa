@@ -1,6 +1,6 @@
 <!-- Content container wrapped -->
 <div class="content-container home-banner">
-  <h1 id="landing-text">Accroche du site sur une à deux lignes maximum</h1>
+  <h1 class="landing-text">Accroche du site sur une à deux lignes maximum</h1>
 </div>
 
 <!-- Start-card -->
@@ -8,36 +8,36 @@
   <div class="content-container">
 
     <!-- Grid -->
-    <div class="offers-grid">
+    <div class="grid-2c">
       <div class="bottom-space rubrique-description">
         Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.
       </div>
 
       <!-- Offers list -->
       <div class="offers">
-        <div class="card-offer">
-          <div class="card-offer-title">
+        <div class="card-p-bottom">
+          <div class="card-p-bottom-title">
             <h2>Type de prestation</h2>
             <i>x</i>
           </div>
           <p>Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
         </div>
-        <div class="card-offer">
-          <div class="card-offer-title">
+        <div class="card-p-bottom">
+          <div class="card-p-bottom-title">
             <h2>Type de prestation</h2>
             <i>x</i>
           </div>
           <p>Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
         </div>
-        <div class="card-offer">
-          <div class="card-offer-title">
+        <div class="card-p-bottom">
+          <div class="card-p-bottom-title">
             <h2>Type de prestation</h2>
             <i>x</i>
           </div>
           <p>Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
         </div>
-        <div class="card-offer">
-          <div class="card-offer-title">
+        <div class="card-p-bottom">
+          <div class="card-p-bottom-title">
             <h2>Type de prestation</h2>
             <i>x</i>
           </div>
@@ -56,21 +56,19 @@
     </div>
     <!-- Clients cards -->
     <!-- Index frist 3 clients -->
-    <div class="card-client">
-      <!-- img -->
-      <!-- nom client -->
-    </div>
-    <div class="card-client">
-      <!-- img -->
-      <!-- nom client -->
-    </div>
-    <div class="card-client">
-      <!-- img -->
-      <!-- nom client -->
-    </div>
+    <% @cases.each do |c| %>
+      <div class="card-p-bottom">
+        <%= link_to case_path(c) do %>
+          <!-- img -->
+          <%= image_tag(c.main_image, class: 'full-width') %>
+          <!-- nom client -->
+          <h3><%= c.client_name %></h3>
+        <% end %>
+      </div>
+    <% end %>
 
     <!-- Contact card -->
-    <div class="card-client">
+    <div class="card-p-bottom">
       <!-- image -->
       <h3>Votre projet</h3>
       <p>Echangeons !</p>

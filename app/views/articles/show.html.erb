@@ -1,0 +1,13 @@
+<div class="content-container">
+    <h1 class='rubrique-title'><%= @article.title %></h1>
+    <span class="description"><%= @article.created_at %></span>
+</div>
+<%= image_tag(@article.main_image, class: 'full-width') %>
+
+<div class="content-container">
+<span class="full-width"><%= @article.body %></span>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
+</div>
+

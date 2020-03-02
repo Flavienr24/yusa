@@ -28,7 +28,7 @@ class CasesController < ApplicationController
 
   # PATCH/PUT /cases/1
   def update
-    @case.update
+    @case.update(case_params)
     redirect_to case_path(@case)
   end
 
@@ -46,6 +46,6 @@ class CasesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def case_params
-      params.require(:case).permit(:client_name, :title, :content, :main_image)
+      params.require(:case).permit(:client_name, :title, :body, :main_image)
     end
 end

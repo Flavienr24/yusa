@@ -1,20 +1,12 @@
-<p id="notice"><%= notice %></p>
+<div class="content-container text-center">
+    <h1 class='rubrique-title'><%= @case.client_name %></h1>
+    <h2 class='rubrique-description'><%= @case.title %></h2>
+</div>
+<%= image_tag(@case.main_image, class: 'full-width') %>
 
-<p>
-  <strong>Client Name:</strong>
-  <%= @case.client_name %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @case.title %>
-</p>
-
-
-<p>
-  <strong>Main image:</strong>
-  <%= @case.main_image %>
-</p>
+<div class="content-container">
+<span class="full-width"><%= @case.body %></span>
 
 <%= link_to 'Edit', edit_case_path(@case) %> |
 <%= link_to 'Back', cases_path %>
+</div>

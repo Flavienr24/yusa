@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :cases
+  resources :articles
   get 'about', to: 'pages#about', as: :about
 
 

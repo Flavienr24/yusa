@@ -33,4 +33,18 @@
       max-width: 100% !important;
     }
   }
+
+  .trix-content h1 {
+    margin-bottom: 16px;
+  }
+
+  blockquote {
+    margin: 32px 0px;
+  }
+}
+
+trix-editor {
+  &.form-control {
+    height: auto;
+  }
 }

@@ -1,5 +1,18 @@
 .header {
-  padding: 32px 8%;
+  width: 100%;
+  position: fixed;
+  padding: 32px 0px 32px 8%;
   display: flex;
   justify-content: space-between;
+  // change color on scroll
+  background-color: white;
 }
+
+#yusa-logo-header {
+  width: 20%;
+  & img {
+    max-width: 100%;
+    min-width: 100px;
+  }
+}
+

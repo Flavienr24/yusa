@@ -1,6 +1,7 @@
 .layout-container {
   width: 100%;
   min-width: 250px;
+  overflow: hidden;
 }
 
 .content-container {
@@ -22,7 +23,7 @@
 }
 
 .home-banner {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: flex-end;
   padding-bottom: 20vh;

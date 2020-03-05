@@ -4,7 +4,8 @@
     <title>Yusa • Digital Transformation, UX Design, Branding • Marseille</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" type="text/css" href="trix.css">
@@ -18,12 +19,34 @@
       <!-- header -->
       <div class="header">
         <%= link_to root_path do %>
-          <div class="yusa-logo">
-            LOGO
+          <div id="yusa-logo-header">
+            <%= image_tag("logo-full.svg") %>
           </div>
         <% end %>
-        <div class="burger-icon">
-          Menu
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <div id="yusa-logo-menu">
+              <%= link_to root_path do %>
+                <%= image_tag("logo-full.svg") %>
+              <% end %>
+            </div>
+            <div class="list-menu">
+              <div class="link-menu">
+                <a href="/cases"><li>Cas clients</li></a>
+                <a href="/articles"><li>Reviews</li></a>
+                <a href="/about"><li>Yusa</li></a>
+              </div>
+              <div class="top-space">
+                <div class="big-title pb-4 pt-4">Vous avez un projet ?</div>
+                <div class="rubrique-description bottom-space">Echangeons !</div>
+                <a class="contact-email" href="mailto:contact@yusa.digital"><u>contact@yusa.digital</u></a>
+              </div>
+            </div>
+          </ul>
         </div>
       </div>
 
@@ -68,9 +91,10 @@
           <h3>à 150 m de la Méditérannée</h3>
         </div>
         <a class="contact-email mb-4" href="mailto:contact@yusa.digital">contact@yusa.digital</a>
-        <div class="description top-space">Yusa® - 203 Corniche du Président John Fitzgerald Kennedy 13007 Marseille</div>
+        <div class="description top-space">Yusa® - Marseille</div>
       </div>
     </div>
+    <%= render 'shared/flashes' %>
     <%= javascript_pack_tag "application" %>
   </body>
 </html>

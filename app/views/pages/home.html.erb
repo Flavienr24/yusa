@@ -59,7 +59,7 @@
     <% @cases.limit(5).each do |c| %>
       <div class="card-p-bottom">
         <%= link_to case_path(c) do %>
-          <%= image_tag(c.main_image, class: 'full-width') %>
+          <%= image_tag(c.main_image, class: 'full-width') if c.main_image.attached? %>
           <!-- nom client -->
           <h3><%= c.client_name %></h3>
         <% end %>
@@ -78,8 +78,8 @@
 </div>
 
 <!-- About -->
-<div class="bg-black content-container">
-  <div class="about">
+<div class="full-width bg-black">
+  <div class="content-container about">
     <div class="rubrique-description">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</div>
     <%= link_to 'YUSA ?', about_path, class: 'cta-primary-emphaze' %>
   </div>
@@ -90,7 +90,7 @@
   <!-- Index first 3 articles -->
   <% @articles.limit(3).each do |a| %>
     <div class="card-article">
-      <%= image_tag(a.main_image, class: 'full-width') %>
+      <%= image_tag(a.main_image, class: 'full-width') if a.main_image.attached? %>
       <h3><%= a.title %></h3>
       <span class="description"><%= l(a.created_at, locale: :fr, format: "%d %B %Y") %></span>
     </div>

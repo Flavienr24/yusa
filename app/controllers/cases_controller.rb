@@ -1,5 +1,6 @@
 class CasesController < ApplicationController
   before_action :set_case, only: [:show, :edit, :update, :destroy]
+  # before_action :authenticate_admin!, except: [:index, :show]
 
   # GET /cases
   def index

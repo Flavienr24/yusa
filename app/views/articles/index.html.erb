@@ -7,7 +7,7 @@
   <% @articles.each do |a| %>
     <div class="card-client">
       <%= link_to article_path(a) do %>
-      <%= image_tag(a.main_image, class: 'full-width') %>
+       <%= image_tag(a.main_image, class: 'full-width') if a.main_image.attached? %>
       <div class="content-container">
         <h2 class="rubrique-title"><%= a.title %></h2>
 
@@ -20,5 +20,10 @@
   <% end %>
 </div>
 
-<%= link_to 'New Case', new_article_path %>
+<% if admin_signed_in? && current_admin.id == 1 %>
+  <%= link_to 'New Articles', new_article_path %>
+<% end %>
 <%= render 'newsletter', model: @article %>
+
+
+

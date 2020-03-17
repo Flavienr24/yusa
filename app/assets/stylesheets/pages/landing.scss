@@ -1,0 +1,51 @@
+.font-light {
+  font-weight: 200;
+}
+
+.footer-landing {
+  width: inherit;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  color: grey;
+}
+
+.container-logo {
+  & img {
+    width: 100%;
+    max-width: 640px;
+  }
+  & .rubrique-description {
+    opacity: 0.6;
+    font-size: 1.9em;
+    padding-top: 3rem;
+  }
+}
+
+.container-quarter {
+  height: 20vh;
+}
+
+@media(max-width: 640px) {
+  .container-logo {
+    & .rubrique-description {
+      padding-top: 30px;
+      font-size: 4.9vw;
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  .container-logo {
+    & .rubrique-description {
+      font-size: 4.2vw;
+      padding-top: 15px;
+    }
+  }
+  h2.container-quarter {
+    font-size: 5vw;
+  }
+  .footer-landing {
+    font-size: 3vw;
+  }
+}

@@ -13,6 +13,7 @@
 
     <div class="form-group">
       <%= f.label :main_image, class: 'p-bold' %>
+      <%= image_tag(@case.main_image, class: 'full-width') if @case.main_image.attached? %>
       <%= f.file_field :main_image, class: 'form-control-file' %>
     </div>
 
@@ -25,3 +26,4 @@
 
   <% end %>
 </div>
+

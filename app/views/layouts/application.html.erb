@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Yusa • Digital Transformation, UX Design, Branding • Marseille</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" type="text/css" href="trix.css">
-    <script type="text/javascript" src="trix.js"></script>
+    <%= render 'layouts/head' %>
   </head>
 
   <body>
@@ -44,6 +36,9 @@
                 <div class="big-title pb-4 pt-4">Vous avez un projet ?</div>
                 <div class="rubrique-description bottom-space">Echangeons !</div>
                 <a class="contact-email" href="mailto:contact@yusa.digital"><u>contact@yusa.digital</u></a>
+                <% if admin_signed_in? && current_admin.id == 1 %>
+                  <%= link_to 'Log out', destroy_admin_session_path, method: :delete %>
+                <% end %>
               </div>
             </div>
           </ul>
@@ -53,46 +48,51 @@
     <!-- content import -->
     <%= yield %>
     <!-- contact -->
-      <div class="content-container bg-dark">
-        <div class="big-title pb-4 pt-4">Vous avez un projet ?</div>
-        <div class="rubrique-description bottom-space">Echangeons !</div>
-        <a class="contact-email" href="mailto:contact@yusa.digital">contact@yusa.digital</a>
-      </div>
-
-      <!-- FAQ -->
-      <div class="content-container pb-3 bg-light card-bottom-rounded">
-        <h3 class="bottom-space">Les questions les plus fréquentes posées par nos clients.</h3>
-        <div class="card-faq">
-          <h2>Question posée par des clients</h2>
-          <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
-        </div>
-        <div class="card-faq">
-          <h2>Question posée par des clients</h2>
-          <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
-        </div>
-        <div class="card-faq">
-          <h2>Question posée par des clients</h2>
-          <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
-        </div>
-        <div class="card-faq">
-          <h2>Question posée par des clients</h2>
-          <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
+      <div class="full-width bg-dark">
+        <div class="content-container">
+          <div class="big-title pb-4 pt-4">Vous avez un projet ?</div>
+          <div class="rubrique-description bottom-space">Echangeons !</div>
+          <a class="contact-email" href="mailto:contact@yusa.digital">contact@yusa.digital</a>
         </div>
       </div>
 
-    <!-- footer -->
-      <div class="footer content-container bg-black pb-3">
-        <div class="social">
-          <!-- social icons -->
+        <!-- FAQ -->
+        <div class="full-width bg-light card-bottom-rounded">
+          <div class="content-container pb-3">
+            <h3 class="bottom-space">Les questions les plus fréquemment posées par nos clients.</h3>
+            <div class="card-faq">
+              <h2>Question posée par des clients</h2>
+              <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
+            </div>
+            <div class="card-faq">
+              <h2>Question posée par des clients</h2>
+              <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
+            </div>
+            <div class="card-faq">
+              <h2>Question posée par des clients</h2>
+              <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
+            </div>
+            <div class="card-faq">
+              <h2>Question posée par des clients</h2>
+              <p>Ipsum nulla dolore quis adipisicing enim sunt nostrud dolore sunt reprehenderit dolor labore. Do aliqua sunt eiusmod sit eu eiusmod anim qui qui nostrud. Dolor nisi et est pariatur occaecat aliqua fugiat Lorem reprehenderit aliquip esse eu labore eiusmod. Esse qui incididunt voluptate exercitation minim pariatur voluptate deserunt ea occaecat magna sunt irure. Sit dolor ex excepteur irure nostrud officia ullamco officia mollit.</p>
+            </div>
+          </div>
         </div>
-        <p class="bottom-space">Culpa fugiat reprehenderit enim sunt nulla irure aliquip nisi eu Lorem tempor nulla sit Lorem aliquip exercitation anim enim nisi.</p>
-        <p class="mb-0">Fabriqué avec 💙 à Marseille</p>
-        <div class="dynamic-location bottom-space">
-          <h3>à 150 m de la Méditérannée</h3>
+      <!-- footer -->
+        <div class="footer bg-black">
+          <div class="content-container pb-3">
+            <div class="social">
+              <!-- social icons -->
+            </div>
+            <p class="bottom-space">Culpa fugiat reprehenderit enim sunt nulla irure aliquip nisi eu Lorem tempor nulla sit Lorem aliquip exercitation anim enim nisi.</p>
+            <p class="mb-0">Fabriqué avec 💙 à Marseille</p>
+            <div class="dynamic-location bottom-space">
+              <h3>à 150 m de la Méditérannée</h3>
+            </div>
+            <a class="contact-email mb-4" href="mailto:contact@yusa.digital">contact@yusa.digital</a>
+            <div class="description top-space">Yusa® - Marseille</div>
+          </div>
         </div>
-        <a class="contact-email mb-4" href="mailto:contact@yusa.digital">contact@yusa.digital</a>
-        <div class="description top-space">Yusa® - Marseille</div>
-      </div>
     </div>
     <%= render 'shared/flashes' %>
     <%= javascript_pack_tag "application" %>

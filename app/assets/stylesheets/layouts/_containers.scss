@@ -5,7 +5,9 @@
 }
 
 .content-container {
-  padding: 60px 16% 96px 16%;
+  padding: 60px 40px 96px 40px;
+  margin: auto;
+  max-width: 1000px;
 }
 
 .newsletter-container {
@@ -31,9 +33,13 @@
 
 .full-width {
   width: 100%;
-  max-width: 500px;
   display: block;
   margin: 0px auto;
+}
+
+.full-screen {
+  height: 100vh;
+  width: 100vw;
 }
 
 // ---------- Grid -----------
@@ -76,3 +82,4 @@
     //?? centrer le contenu dans la div
   }
 // }
+

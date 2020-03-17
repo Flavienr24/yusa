@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
-  devise_for :admins
-  root to: 'pages#home'
+  root to: 'pages#landing'
+
+  devise_for :admins, path: '', path_names: { sign_in: 'admin'}
 
   resources :cases
   resources :articles
   get 'about', to: 'pages#about', as: :about
+  # get 'landing', to: 'pages#landing', as: :landing
+  get 'home', to: 'pages#home', as: :home
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

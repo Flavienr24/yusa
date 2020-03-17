@@ -2,17 +2,19 @@
     <h1 class='rubrique-title'><%= @case.client_name %></h1>
     <h2 class='rubrique-description'><%= @case.title %></h2>
 </div>
-<%= image_tag(@case.main_image, class: 'full-width') %>
+<%= image_tag(@case.main_image, class: 'full-width') if @case.main_image.attached? %>
 
 <div class="content-container">
 <span class="full-width"><%= @case.body %></span>
 
-<%= link_to 'Edit', edit_case_path(@case) %> |
-<%= link_to 'Back', cases_path %>
+<% if admin_signed_in? && current_admin.id == 1 %>
+  <%= link_to 'Edit', edit_case_path(@case) %> |
+<% end %>
+
 
 <% @cases.limit(3).each do |c| %>
   <div class="card-article">
-    <%= image_tag(c.main_image, class: 'full-width') %>
+    <%= image_tag(c.main_image, class: 'full-width') if c.main_image.attached? %>
     <h3><%= c.client_name %></h3>
   </div>
 <% end %>

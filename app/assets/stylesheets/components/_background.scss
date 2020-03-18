@@ -15,3 +15,22 @@ color: $white;
 .bg-yellow {
   background-color: $yellow;
 }
+
+.bg-animated {
+  background: linear-gradient(-45deg, #202C40, #1E1E1E);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  color: $white;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

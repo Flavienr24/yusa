@@ -20,3 +20,6 @@ require("trix")
 require("@rails/actiontext")
 
 import 'bootstrap';
+import 'components/landing-animations';
+
+

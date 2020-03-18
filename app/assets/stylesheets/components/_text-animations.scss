@@ -1,0 +1,98 @@
+//Landing text background animation
+.big-text {
+  font-size: 24vh;
+  color: #111111;
+  font-weight: 900;
+  line-height: 0.79em;
+  transform: translateX(100%);
+  min-width: max-content;
+  opacity: 0.07;
+  text-transform: uppercase;
+  text-shadow: 0 13.36px 8.896px #05040c,0 -2px 1px #464646;
+  font-family: 'Coda', sans-serif;
+}
+
+.text-background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  margin: 0 auto;
+  overflow: hidden;
+  & .text-bg-moving1 {
+  animation: moveTexta linear 300s -5s forwards infinite;
+  }
+  & .text-bg-moving2 {
+  animation: moveTextb linear 320s -20s backwards infinite;
+  }
+  & .text-bg-moving3 {
+  animation: moveTextc linear 360s -25s forwards infinite;
+  }
+  & .text-bg-moving4 {
+  animation: moveTextd linear 380s -15s backwards infinite;
+  }
+  & .text-bg-moving5 {
+  animation: moveTexte linear 350s -30s backwards infinite;
+  }
+}
+
+@keyframes moveTexta {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-150%); }
+}
+
+@keyframes moveTextb {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+@keyframes moveTextc {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-150%); }
+}
+@keyframes moveTextd {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+@keyframes moveTexte {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-150%); }
+}
+//-----------------------
+
+// Animation on pitch
+
+.anim-text-flow,
+.anim-text-flow-hover:hover {
+
+  $animationSteps: 20;
+  $animationDuration: 50;
+  $animationElement: span;
+  $animationElementsCount: 100;
+  $delayBetweenLetters: 0.2;
+
+  #{$animationElement} {
+    animation-name: anim-text-flow-keys;
+    animation-duration: #{$animationDuration}s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes anim-text-flow-keys {
+    @for $i from 0 through $animationSteps {
+      #{percentage($i * (1 / $animationSteps))} {
+        color: hsla(240, 10%, random(100), 1);
+      }
+    }
+  }
+
+  $totalDelayTime: $animationElementsCount * $delayBetweenLetters;
+
+  @for $i from 1 through $animationElementsCount {
+    #{$animationElement}:nth-of-type(#{$i}) {
+      animation-delay: #{($i * $delayBetweenLetters) - $totalDelayTime}s;
+    }
+  }
+}
+
+
+//------------

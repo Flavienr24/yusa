@@ -6,11 +6,13 @@
 
   <body>
 
-    <div class="bg-black full-screen">
+    <div class="bg-animated full-screen">
       <%= yield %>
       <div class="footer-landing description">
         <p>YUSA.DIGITAL  -  COPYRIGHT © 2020  -  MARSEILLE <br> ALL RIGHTS RESERVED </p>
       </div>
     </div>
+    <%= javascript_pack_tag "application" %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </body>
 </html>

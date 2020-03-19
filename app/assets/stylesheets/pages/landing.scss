@@ -1,3 +1,21 @@
+.landing-container {
+  padding: 60px 40px 10px 40px;
+  margin: auto;
+  max-width: 1000px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    opacity: 0.7;
+  }
+  & .p-bold {
+    font-size: 1.3em;
+  }
+}
+
 .font-light {
   font-weight: 200;
 }
@@ -8,12 +26,17 @@
   position: absolute;
   bottom: 10px;
   color: grey;
+  & p {
+    font-size: 0.7rem;
+    line-height: 1.9em;
+  }
 }
 
 .container-logo {
   & img {
     width: 100%;
     max-width: 640px;
+    max-height: 15vh;
   }
   & .rubrique-description {
     opacity: 0.6;
@@ -26,11 +49,19 @@
   height: 20vh;
 }
 
-@media(max-width: 640px) {
+@media(max-width: 768px) {
   .container-logo {
     & .rubrique-description {
       padding-top: 30px;
       font-size: 4.9vw;
+    }
+  }
+  .landing-container {
+    & h2 {
+      font-size: 1.4em;
+    }
+    & .p-bold {
+      font-size: 1em;
     }
   }
 }
@@ -38,14 +69,22 @@
 @media(max-width: 400px) {
   .container-logo {
     & .rubrique-description {
-      font-size: 4.2vw;
-      padding-top: 15px;
+      font-size: 4.3vw;
+      padding-top: 2em;
     }
   }
+
   h2.container-quarter {
     font-size: 5vw;
   }
   .footer-landing {
     font-size: 3vw;
+    & p {
+      font-size: 0.7em;
+    }
+  }
+
+  .landing-container .p-bold {
+    font-size: 0.9em;
   }
 }

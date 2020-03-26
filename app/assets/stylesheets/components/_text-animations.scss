@@ -7,10 +7,10 @@
   line-height: 0.8em;
   transform: translateX(100%);
   min-width: max-content;
-  opacity: 0.07;
+  opacity: 0.01;
   text-transform: uppercase;
   text-shadow: 0 13.36px 8.896px #05040c,0 -2px 1px #464646;
-  font-family: 'Coda', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .text-background {
@@ -105,11 +105,11 @@
 @keyframes an{
   from{
       opacity: 0;
-      // transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
   }
   to{
       opacity: 1;
-      // transform: perspective(500px) translate3d(0, 0, 0);
   }
 }
+
+//-----Deploy----
 

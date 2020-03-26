@@ -39,3 +39,16 @@
   }
 }
 
+.fas-stylized {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+  transition: 300ms ease all;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.trigger-active {
+  transform: rotate(180deg);
+}

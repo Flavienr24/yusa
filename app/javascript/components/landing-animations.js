@@ -24,9 +24,10 @@ function textAnimationFlow() {
   });
 };
 
-//Smooth Paragraph
+
+//Smooth Paragraph on landing
 const paragrahAnimation = document.querySelectorAll('.smooth-text');
-const firstSection = document.querySelector('.bg-animated');
+const firstSection = document.querySelector('.bg-dark-animated');
 
 document.addEventListener('scroll', onScroll);
 

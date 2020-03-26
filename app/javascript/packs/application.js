@@ -21,5 +21,9 @@ require("@rails/actiontext")
 
 import 'bootstrap';
 import 'components/landing-animations';
+import { initUpdateNavbarOnScroll } from 'components/header';
+initUpdateNavbarOnScroll();
+
+import { displayOnClick } from 'components/text-deploy';
 
 

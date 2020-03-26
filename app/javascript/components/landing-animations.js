@@ -1,3 +1,5 @@
+//Pitch animation
+
 window.onload = function() {
 
 var textWrapper = document.querySelector('.animated-letter');
@@ -21,3 +23,33 @@ function textAnimationFlow() {
   return '<span>' + chars.join('</span><span>') + '</span>';
   });
 };
+
+//Smooth Paragraph
+const paragrahAnimation = document.querySelectorAll('.smooth-text');
+const firstSection = document.querySelector('.bg-animated');
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll () {
+  // calcule la tailler de la section
+  sizeFirstSection = firstSection.offsetHeight;
+  positionY = window.scrollY;
+  // si on scroll plus de la taille de la section 1
+  if (positionY > sizeFirstSection/3) {
+    paragrahAnimation.forEach((item) => {
+    item.style.display = "";
+    });
+  } else {
+    paragrahAnimation.forEach((item) => {
+    item.style.display = "none";
+    });
+  };
+};
+
+
+
+
+
+
+
+

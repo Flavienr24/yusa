@@ -21,7 +21,9 @@ color: $white;
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
   color: $white;
+  overflow: hidden;
 }
+
 
 @keyframes gradient {
   0% {

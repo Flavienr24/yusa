@@ -9,7 +9,7 @@
     <p class="big-text text-bg-moving5">Product Management User Experience Digital Transformation Analytcs User Research Design Sprint Prototype UX Teaching Data Driven Collaborative</p>
   </div>
   <div class="content-container home-banner">
-    <h1 class="landing-text rubrique-title animated-letter txt anim-text-flow">Sprint Your Digital Transformation</h1>
+    <h1 class="left-align-80 rubrique-title animated-letter txt anim-text-flow">Sprint Your Digital Transformation</h1>
   </div>
 </section>
 <!-- Start-card -->
@@ -27,9 +27,9 @@
         <div class="card-p-bottom trigger">
           <div class="card-p-bottom-title pointer">
             <h2>Type de prestation</h2>
-            <i class="fas fa-caret-down fas-stylized"></i>
+            <i class="fas fa-caret-down fas-stylized trigger-active"></i>
           </div>
-          <p class="todeploy" style="display: none">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
+          <p class="todeploy">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
         </div>
         <div class="card-p-bottom trigger">
           <div class="card-p-bottom-title pointer">
@@ -87,15 +87,33 @@
 </div>
 
 <!-- About -->
-<div class="full-width bg-black">
+<div class="full-width">
   <div class="content-container about">
-    <div class="rubrique-description">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</div>
-    <%= link_to 'YUSA ?', about_path, class: 'cta-primary-emphaze' %>
+    <div class="rubrique-description left-align-60">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</div>
+    <%= link_to 'En savoir plus', about_path, class: 'cta-primary' %>
+  </div>
+  <div class="rubrique-title center-item w-50">Ils ont accélérés leurs projets digitaux à nos côtés.</div>
+  <!-- clients -->
+  <div class="content-container">
+    <div class="d-flex justify-content-center">
+      <div class="justify-content-between grid-2c m-4">
+        <%= image_tag "clients/sg-logo.png", alt: "société générale", class: 'm-4' %>
+        <%= image_tag "clients/cdn-logo.png", alt: "crédit du nord", class: 'm-4' %>
+        <%= image_tag "clients/enx-logo.png", alt: "euronext", class: 'm-4' %>
+        <%= image_tag "clients/lpa-logo.png", alt: "la parisienne assurance", class: 'm-4' %>
+      </div>
+      <div class="justify-content-between grid-2c m-4">
+        <%= image_tag "clients/bmfs-logo.png", alt: "BMW financial services", class: 'm-4' %>
+        <%= image_tag "clients/lcl-logo.png", alt: "LCL banque assurance", class: 'm-4' %>
+        <%= image_tag "clients/gnrl-logo.png", alt: "generali france", class: 'm-4' %>
+        <%= image_tag "clients/hms-logo.png", alt: "hermes", class: 'm-4' %>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- News -->
-<div class="content-container pb-3">
+<div class="content-container bottom-space mb-5">
   <!-- Index first 3 articles -->
   <% @articles.limit(3).each do |a| %>
     <div class="card-article">

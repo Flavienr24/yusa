@@ -4,7 +4,7 @@
 
 .cta-primary {
   display: block;
-  width: 120px;
+  width: fit-content;
   margin: 64px auto 0px auto;
   padding: 8px 32px;
   background-color: $white;
@@ -41,7 +41,7 @@
 
 .fas-stylized {
   font-size: 1.5em;
-  margin-bottom: 0.2em;
+  margin: 0em 0em 0.2em 3em;
   transition: 300ms ease all;
 }
 

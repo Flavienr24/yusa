@@ -16,6 +16,11 @@ color: $white;
   background-color: $yellow;
 }
 
+.bg-footer {
+  background-color: $dark-grey;
+  color: $white;
+}
+
 .bg-dark-animated {
   background: linear-gradient(-45deg, #202C40, #1E1E1E);
   background-size: 400% 400%;

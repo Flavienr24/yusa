@@ -4,6 +4,22 @@
   overflow: hidden;
 }
 
+.left-align-80 {
+  width: 80%;
+  text-align: left;
+}
+
+.left-align-60 {
+  width: 60%;
+  text-align: left;
+}
+
+.center-item {
+  text-align: center;
+  margin: 0px auto;
+  display: flex;
+}
+
 .content-container {
   padding: 60px 40px 96px 40px;
   margin: auto;
@@ -53,7 +69,6 @@
 .grid-2c {
   display: grid;
   grid-template-columns: 1fr;
-  padding-top: 64px;
 }
 
 .grid-cases {
@@ -68,7 +83,6 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-flow:dense;
     grid-gap: 88px;
-    padding-top: 96px;
   }
 
   .grid-cases {
@@ -81,12 +95,5 @@
     }
   }
 }
-// ------------ About section -----------
-// @media(min-width: 760px) {
-  // Desktop
-  .about {
-    min-height: 70vh;
-    //?? centrer le contenu dans la div
-  }
-// }
+
 

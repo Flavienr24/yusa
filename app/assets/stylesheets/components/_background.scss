@@ -30,7 +30,7 @@ color: $white;
 }
 
 .bg-light-animated {
-  background: linear-gradient(-45deg, #FFFFFF, #F7FBFA);
+  background: linear-gradient(-45deg, #eaeaea, #d4dedb);
   animation: gradient 20s ease infinite;
   color: $dark-blue;
   overflow: hidden;
@@ -43,7 +43,6 @@ color: $white;
   overflow: hidden;
   max-width: 100%;
   z-index: 0;
-  opacity: 0.25;
 }
 
 

@@ -1,19 +1,13 @@
 <!-- Content container wrapped -->
 <section class="bg-light-animated full-screen">
-  <div class="text-background">
-    <p class="big-text text-bg-moving1">Design Product Management Analytcs User Experience Digital Transformation User Branding Research Design Sprint Prototype UX Teaching Data Driven Collaborative</p>
-    <p class="big-text text-bg-moving2">Analytcs Product Management User Experience Digital Transformation User Research Design Sprint Prototype UX Teaching Data Driven Collaborative</p>
-    <p class="big-text text-bg-moving3">Design Product Management User Experience Digital Transformation User Research Analytcs Design Sprint Prototype UX Teaching Data Driven Collaborative</p>
-    <p class="big-text text-bg-moving4">Product Management User Experience Branding Digital Transformation User Research Design Sprint Prototype UX Teaching Data Driven Collaborative</p>
-    <p class="big-text text-bg-moving5">Product Management User Branding Experience Digital Transformation User Research Design Sprint Analytcs Prototype UX Teaching Data Driven Collaborative</p>
-    <p class="big-text text-bg-moving5">Product Management User Experience Digital Transformation Analytcs User Research Design Sprint Prototype UX Teaching Data Driven Collaborative</p>
-  </div>
+  <%= image_tag "bg-logo-light.svg", class: 'bg-logo-light' %>
   <div class="content-container home-banner">
-    <h1 class="left-align-80 rubrique-title animated-letter txt anim-text-flow">Sprint Your Digital Transformation</h1>
+    <h1 class="hero-title animated-letter txt anim-text-flow">Sprint Your Digital Transformation.</h1>
+    <h2 class="rubrique-description mt-4">Conseil en UX Design et gestion de projets digitaux</h2>
   </div>
 </section>
 <!-- Start-card -->
-<div class="bg-black card-rounded overlay">
+<div class="bg-black card-rounded overlay top-space bottom-space">
   <div class="content-container">
 
     <!-- Grid -->
@@ -21,7 +15,6 @@
       <div class="bottom-space rubrique-description">
         Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.
       </div>
-
       <!-- Offers list -->
       <div class="offers">
         <div class="card-p-bottom trigger">
@@ -29,70 +22,51 @@
             <h2>Type de prestation</h2>
             <i class="fas fa-caret-down fas-stylized trigger-active"></i>
           </div>
-          <p class="todeploy smooth-text">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
+          <p class="todeploy smooth-text pt-2 mb-5">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
         </div>
         <div class="card-p-bottom trigger">
           <div class="card-p-bottom-title pointer">
             <h2>Type de prestation</h2>
             <i class="fas fa-caret-down fas-stylized"></i>
           </div>
-          <p class="todeploy smooth-text" style="display: none">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
+          <p class="todeploy smooth-text pt-2 mb-5" style="display: none">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
         </div>
         <div class="card-p-bottom trigger">
           <div class="card-p-bottom-title pointer">
             <h2>Type de prestation</h2>
             <i class="fas fa-caret-down fas-stylized"></i>
           </div>
-          <p class="todeploy smooth-text" style="display: none">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
+          <p class="todeploy smooth-text pt-2 mb-5" style="display: none">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
         </div>
         <div class="card-p-bottom trigger">
           <div class="card-p-bottom-title pointer">
             <h2>Type de prestation</h2>
             <i class="fas fa-caret-down fas-stylized"></i>
           </div>
-          <p class="todeploy smooth-text" style="display: none">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
+          <p class="todeploy smooth-text pt-2 mb-5" style="display: none">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-    <!-- Clients section -->
-<div class="content-container">
-  <div class="clients">
-    <div class="logo-list">
-      <!-- grid ??? -->
-    </div>
-    <!-- Clients cards -->
-    <!-- Index frist 3 clients -->
-    <% @cases.limit(5).each do |c| %>
-      <div class="card-p-bottom">
-        <%= link_to case_path(c) do %>
-          <%= image_tag(c.main_image, class: 'full-width') if c.main_image.attached? %>
-          <!-- nom client -->
-          <h3><%= c.client_name %></h3>
-        <% end %>
-      </div>
-    <% end %>
-
-    <!-- Contact card -->
-    <div class="card-p-bottom">
-      <!-- image -->
-      <h3>Votre projet</h3>
-      <p>Echangeons !</p>
-    </div>
-    <a class="contact-email" style="color: black;" href="mailto:contact@yusa.digital">contact@yusa.digital</a>
-    <%= link_to 'Voir plus', cases_path, class: 'cta-primary' %>
   </div>
 </div>
 
 <!-- About -->
-<div class="full-width">
-  <div class="content-container about">
-    <div class="rubrique-description left-align-60">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</div>
+<span id="landing-contact"></span>
+<div class="grid-2c content-container mt-5">
+  <div style="margin: auto 0px;">
+    <div class="rubrique-description">Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</div>
     <%= link_to 'En savoir plus', about_path, class: 'cta-primary' %>
   </div>
-  <div class="rubrique-title center-item w-50">Ils ont accélérés leurs projets digitaux à nos côtés.</div>
+  <div class="card-rounded p-5">
+    <h3>Vous avez un projet ?</h3>
+    <p class="rubrique-description">Echangeons.</p>
+    <input type="text" placeholder="Prénom*" class="text-field">
+    <input type="text" placeholder="Email*" class="text-field">
+    <input type="text" placeholder="Entreprise*" class="text-field">
+    <a href="#" class="cta-secondary">Envoyer</a>
+  </div>
+</div>
+  <div class="rubrique-title center-item w-50 mt-5">Ils ont accélérés leurs projets digitaux à nos côtés.</div>
   <!-- clients -->
   <div class="content-container">
     <div class="d-flex justify-content-center">
@@ -110,18 +84,32 @@
       </div>
     </div>
   </div>
-</div>
 
-<!-- News -->
-<div class="content-container bottom-space mb-5">
-  <!-- Index first 3 articles -->
-  <% @articles.limit(3).each do |a| %>
-    <div class="card-article">
-      <%= image_tag(a.main_image, class: 'full-width') if a.main_image.attached? %>
-      <h3><%= a.title %></h3>
-      <span class="description"><%= l(a.created_at, locale: :fr, format: "%d %B %Y") %></span>
-    </div>
-  <% end %>
-    <%= link_to 'Voir plus', articles_path, class: 'cta-primary' %>
+    <!-- Cases section -->
+<div class="content-container d-none">
+  <div class="grid-2c">
+    <!-- Index frist 3 clients -->
+    <% @cases.limit(5).each do |c| %>
+      <div class="card-p-bottom">
+        <%= link_to case_path(c) do %>
+          <%= image_tag(c.main_image, class: 'full-width') if c.main_image.attached? %>
+          <!-- nom client -->
+          <h3><%= c.client_name %></h3>
+        <% end %>
+      </div>
+    <% end %>
+<!-- </div>
+
+
+<div class="content-container grid-2c"> -->
+    <% @articles.limit(3).each do |a| %>
+      <div class="card-article">
+        <%= image_tag(a.main_image, class: 'full-width') if a.main_image.attached? %>
+        <h3><%= a.title %></h3>
+        <span class="description"><%= l(a.created_at, locale: :fr, format: "%d %B %Y") %></span>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to 'Voir plus', articles_path, class: 'cta-primary mb-5' %>
 </div>
 

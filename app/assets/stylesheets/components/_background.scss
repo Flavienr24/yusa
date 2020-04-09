@@ -31,10 +31,19 @@ color: $white;
 
 .bg-light-animated {
   background: linear-gradient(-45deg, #FFFFFF, #F7FBFA);
-  background-size: 400% 400%;
   animation: gradient 20s ease infinite;
   color: $dark-blue;
   overflow: hidden;
+}
+
+.bg-logo-light {
+  position: absolute;
+    right: -40px;
+    bottom: 2px;
+  overflow: hidden;
+  max-width: 100%;
+  z-index: 0;
+  opacity: 0.25;
 }
 
 

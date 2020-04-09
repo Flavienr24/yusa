@@ -95,9 +95,9 @@
 // ------------- Media Queries ---------------
 
 // Smartphone
-@media(max-width: 400px) {
+@media(max-width: 420px) {
   .content-container {
-    padding: 60px 3em 96px 3em;
+    padding: 60px 10% 96px 10%;
     margin: auto;
     max-width: 1000px;
   }
@@ -123,7 +123,12 @@
   }
 }
 
-
+    // Tablet
+@media(min-width: 420px) and (max-width: 770px) {
+  .content-container {
+    padding: 60px 2.5em 96px 2.5em;
+  }
+}
 
 
 

@@ -18,6 +18,7 @@
   text-align: center;
   margin: 0px auto;
   display: flex;
+  max-width: 480px;
 }
 
 .content-container {
@@ -75,6 +76,12 @@
   grid-gap: 88px;
 }
 
+.grid-logo-clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow:dense;
+  grid-gap: 40px;
+}
   // .grid-cases {
   //   grid-template-columns: 1fr 1fr;
   //   grid-auto-flow:dense;
@@ -100,9 +107,19 @@
     grid-template-columns: 1fr;
   }
 
+  .grid-logo-clients {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   .left-align-80 {
       width: 100%;
       text-align: left;
+  }
+
+  .center-item {
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 

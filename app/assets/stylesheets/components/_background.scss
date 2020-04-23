@@ -29,9 +29,8 @@ color: $white;
   overflow: hidden;
 }
 
-.bg-light-animated {
+.bg-light-gradient {
   background: linear-gradient(-45deg, #eaeaea, #d4dedb);
-  animation: gradient 20s ease infinite;
   color: $dark-blue;
   overflow: hidden;
 }

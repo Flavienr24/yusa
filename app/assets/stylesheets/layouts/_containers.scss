@@ -24,7 +24,7 @@
 .content-container {
   padding: 60px 5em 96px 5em;
   margin: auto;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 .newsletter-container {
@@ -68,6 +68,9 @@
   position: relative;
 }
 
+.min-100-vh {
+  min-height: 100vh;
+}
 
 .grid-2c {
   display: grid;

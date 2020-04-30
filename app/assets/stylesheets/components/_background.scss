@@ -29,10 +29,15 @@ color: $white;
   overflow: hidden;
 }
 
-.bg-light-animated {
+.bg-light-gradient {
   background: linear-gradient(-45deg, #eaeaea, #d4dedb);
-  animation: gradient 20s ease infinite;
   color: $dark-blue;
+  overflow: hidden;
+}
+
+.bg-black-gradient {
+  background: linear-gradient(286.22deg, #1E1E1E 54.9%, #282828 85.15%);
+  color: white;
   overflow: hidden;
 }
 
@@ -45,6 +50,14 @@ color: $white;
   z-index: 0;
 }
 
+.bg-logo-overflow {
+  position: absolute;
+    right: -40px;
+    bottom: 2px;
+  overflow: hidden;
+  max-width: 100%;
+  z-index: 0;
+}
 
 @keyframes gradient {
   0% {

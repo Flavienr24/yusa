@@ -59,6 +59,12 @@ color: $white;
   z-index: 0;
 }
 
+@media (max-width: 420px) {
+  .smedia-max-width {
+    max-width: 147%;
+  }
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

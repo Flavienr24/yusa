@@ -27,7 +27,7 @@ function textAnimationFlow() {
 
 //Smooth Paragraph on landing
 const paragrahAnimation = document.querySelectorAll('.smooth-text');
-const firstSection = document.querySelector('.bg-dark-animated');
+const firstSection = document.querySelector('.bg-black-gradient');
 
 document.addEventListener('scroll', onScroll);
 

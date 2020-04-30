@@ -41,6 +41,7 @@
     width: 100%;
     max-width: 640px;
     max-height: 15vh;
+    position: relative;
   }
   & .rubrique-description {
     opacity: 0.6;
@@ -50,8 +51,18 @@
 }
 
 .container-quarter {
-  height: 20vh;
+  height: 19vh;
+  position: relative;
 }
+
+// .bg-logo-landing {
+//   position: absolute;
+//     right: -40px;
+//     bottom: -110px;
+//   overflow: hidden;
+//   max-width: 100%;
+//   z-index: 0;
+// }
 
 @media(max-width: 768px) {
   .container-logo {

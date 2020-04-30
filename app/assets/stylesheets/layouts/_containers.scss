@@ -42,10 +42,8 @@
 }
 
 .overlay {
-  z-index: 1;
   position: relative;
-  margin: -2em 0px;
-
+  margin: -3em 0px;
 }
 
 .home-banner {
@@ -54,6 +52,14 @@
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
+}
+
+.z-index-30 {
+  z-index: 30 !important;
+}
+
+.z-index-50 {
+  z-index: 50 !important;
 }
 
 .full-width {

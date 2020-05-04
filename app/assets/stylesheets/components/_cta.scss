@@ -44,6 +44,14 @@
   margin-top: 2em;
   text-align: center;
   border-radius: 5px;
+  &:hover {
+    background-color: $yellow;
+    color: $black;
+  }
+  &:active {
+    background-color: green;
+    color: white;
+  }
 }
 
 .fas-stylized {

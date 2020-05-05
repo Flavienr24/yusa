@@ -25,5 +25,4 @@ import { initUpdateNavbarOnScroll } from 'components/header';
 initUpdateNavbarOnScroll();
 
 import { displayOnClick } from 'components/text-deploy';
-import 'components/ajax-btn';
 

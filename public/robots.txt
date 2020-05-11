@@ -3,3 +3,4 @@ User-agent: *
 Disallow: /admin
 Disallow: /password/new
 Disallow: /sign_up
+Disallow: /test_page

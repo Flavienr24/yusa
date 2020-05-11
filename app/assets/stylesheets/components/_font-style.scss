@@ -99,6 +99,11 @@
     letter-spacing: -0.008em;
   }
 
+  .list-no-style {
+    list-style: none;
+    padding-left: 0px;
+  }
+
     // Smartphone
     @media(max-width: 420px) {
       .hero-title {

@@ -12,4 +12,7 @@ class PagesController < ApplicationController
     render layout: "landing"
   end
 
+  def test_page
+  end
+
 end

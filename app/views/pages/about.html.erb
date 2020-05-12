@@ -1,67 +1,166 @@
-<section class="bg-black-gradient full-screen mb-4">
-  <%= image_tag "bg-logo-black.svg", class: 'bg-logo-overflow' %>
-  <div class="content-container home-banner">
+<div class="bg-black-gradient full-screen mb-4">
+  <div class="content-container home-banner z-index-50">
     <h1 class="hero-title">Hello !<br>Bienvenue chez Yusa.</h1>
   </div>
-</section>
+</div>
+<%= image_tag "bg-logo-black.svg", class: 'bg-logo-overflow' %>
+<div class="layout-container content-container row flex-column">
+  <div class="col-12 col-lg-8 smooth-text" style="display: none;">
+    <h2 class="big-title mt-5">Pourquoi ?</h2>
+    <p class="rubrique-description">Pourquoi les clients sont davantage fidèles à une marque plutôt qu'une autre ?
+    Pourquoi cette entreprise a un taux de transformation plus élevé que ses concurrents ?
+    Pourquoi mes collaborateurs n'utilisent pas le dernier outil mis en place ? Pourquoi nous regardons autant les avis laissés sur les réseaux ?
+    La réponse peut être synthétisée à travers une simple notion : l'expérience vécue. </p>
+  </div>
+  <div class="col-12 col-lg-8 self-flex-end mt-5 top-space bottom-space smooth-text" style="display: none;">
+    <h2 class="big-title mt-5">Irrationnels et subjectifs</h2>
+    <p class="rubrique-description">L'expérience est le principal levier de fidélisation et le facteur qui impacte le plus le
+    taux de transformation. La raison est simple : nos décisions sont à 90% guidées par nos émotions. En quelques sortes, la grande majorité
+    de nos choix sont irrationnels et cadrés par les expériences que nous vivons. A l'heure où de nombreuses organisations souhaitent entamer
+    leur transisition numérique, il apparait donc nécessaire de placer l'utilisateur au centre des réflexions pour gagner en efficacité. Chez Yusa,
+    nous sommes là pour ça : accompagner votre transformation pour qu'elle soit avant tout penser pour vos utilisateurs. </p>
+  </div>
+  <div class="mt-5 top-space bottom-space">
+    <h2 class="big-title">Nos services</h2>
+    <p class="rubrique-description">Que vous cherchez à établir votre stratégie de transformation digitale, optimisez votre présence sur Internet, améliorer votre positionnement, ou encore vous former aux dernières méthodologies de conception, nous sommes là pour vous accompagner.</p>
+  </div>
 
-
-
-<!-- Image -->
-
-<div class="bg-black content-container">
-  <h1>Nos services</h1>
-  <p>Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
-
-  <div class="offers top-space">
-    <div class="card-p-bottom">
-      <h2>Stratégie</h2>
-      <ul>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-      </ul>
-    </div>
-     <div class="card-p-bottom">
-      <h2>Design</h2>
-      <ul>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-      </ul>
-    </div>
-    <div class="card-p-bottom">
-      <h2>Content</h2>
-      <ul>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-      </ul>
-    </div>
-    <div class="card-p-bottom">
-      <h2>Branding</h2>
-      <ul>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-        <li>Service</li>
-      </ul>
+  <div class="services-container ">
+    <ul class="list-no-style domain-list align-self-start">
+      <li class="p-1 m-3 button_slide slide_right"><a id="dom1" class="domain p-bold text-black" data-toggle="collapse" href="#serviceOne" role="button" aria-expanded="true" aria-controls="serviceOne">Stratégie digitale</a></li>
+      <li class="p-1 m-3 button_slide slide_right"><a id="dom2"class="domain p-bold text-black" data-toggle="collapse" href="#serviceTwo" role="button" aria-expanded="false" aria-controls="serviceTwo">Expérience utilisateur</a></li>
+      <li class="p-1 m-3 button_slide slide_right"><a id="dom3"class="domain p-bold text-black" data-toggle="collapse" href="#serviceTwo" role="button" aria-expanded="false" aria-controls="serviceTwo">Efficacité digitale</a></li>
+      <li class="p-1 m-3 button_slide slide_right"><a id="dom4"class="domain p-bold text-black" data-toggle="collapse" href="#serviceTwo" role="button" aria-expanded="false" aria-controls="serviceTwo">Conception et création</a></li>
+      <li class="p-1 m-3 button_slide slide_right"><a id="dom5"class="domain p-bold text-black" data-toggle="collapse" href="#serviceTwo" role="button" aria-expanded="false" aria-controls="serviceTwo">Formation</a></li>
+    </ul>
+    <div class="">
+      <div class="collapse show" data-domain="dom1">
+        <ul class="mt-3 list-no-style">
+          <li class="pb-3">Roadmap digitale</li>
+          <li class="pb-3">Reposionnement</li>
+          <li class="pb-3">Identification d'objectifs business</li>
+          <li class="pb-3">Ideation workshops</li>
+          <li class="pb-3">Prospective business</li>
+          <li class="pb-3">Product management de transition</li>
+          <li class="pb-3">Lancement de nouvelles offres</li>
+        </ul>
+      </div>
+      <div class="collapse" data-domain="dom2">
+        <ul class="mt-3 list-no-style">
+          <li class="pb-3">Brief UX</li>
+          <li class="pb-3">Audit d'ergonomie</li>
+          <li class="pb-3">Interviews utilisateurs</li>
+          <li class="pb-3">Tests d'utilisabilité</li>
+          <li class="pb-3">Design Sprint</li>
+          <li class="pb-3">Parcours utilisateur</li>
+        </ul>
+      </div>
+      <div class="collapse" data-domain="dom3">
+        <ul class="mt-3 list-no-style">
+          <li class="pb-3">Digitalisation de processus</li>
+          <li class="pb-3">Signature électronique</li>
+          <li class="pb-3">Chatbot</li>
+          <li class="pb-3">Web analytics & SEO</li>
+          <li class="pb-3">Growth Hacking</li>
+          <li class="pb-3">Market place</li>
+        </ul>
+      </div>
+      <div class="collapse" data-domain="dom4">
+        <ul class="mt-3 list-no-style">
+          <li class="pb-3">Refonte de site et application web</li>
+          <li class="pb-3">Prototypage</li>
+          <li class="pb-3">Brand Identity</li>
+          <li class="pb-3">Création de contenu</li>
+          <li class="pb-3">Développement web</li>
+          <li class="pb-3">Design d'interface (UI)</li>
+          <li class="pb-3">Création de design system</li>
+        </ul>
+      </div>
+      <div class="collapse" data-domain="dom5">
+        <ul class="mt-3 list-no-style">
+          <li class="pb-3">Management de la conception UX</li>
+          <li class="pb-3">Prototypage d'application</li>
+          <li class="pb-3">Intégration web FrontEnd</li>
+          <li class="pb-3">Design Sprint workshops</li>
+          <li class="pb-3">Méthodologies de User Research</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
-
-<!-- Image -->
-
-<div class="content-container">
-  <h2 class="bottom-space">Nos valeurs</h2>
-  <p>Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
-  <p>Aliqua labore enim nulla ex enim incididunt. Duis quis nulla enim pariatur enim cillum aliquip laborum adipisicing id consequat id. Sint voluptate Lorem ipsum voluptate cupidatat culpa enim eu do enim eiusmod sint est qui.</p>
+<!-- FAQ -->
+<div class="full-width bg-dark card-top-rounded bottom-space mt-5">
+  <div class="content-container pb-3">
+    <div class="left-align-80">
+      <h3 class="bottom-space top-space rubrique-title">Questions les plus fréquemment posées par nos clients.</h3>
+      <div class="card-p-bottom mb-5 trigger">
+        <div class="card-p-bottom-title pointer">
+          <h2>Quels sont vos domaines d'expertises</h2>
+          <i class="fas fa-caret-down fas-stylized trigger-active"></i>
+        </div>
+        <div class="todeploy">
+          <p>L'expérience utilisateur est le pilier fondateur de notre activité. Après des années de conseil en stratégie et transformation digitale, nous nous sommes rendus compte que nos plus beaux succès étaient liées à des missions impliquant l'amélioration de l'expérience utilisateur. Historiquement spécialisés dans la conception de produits digitaux et la refonte de parcours utilisateur, nous avons rapidement étendu notre offre vers l'identité de marque, la stratégie de contenu et le conseil en conception d'interfaces digitales. Nous sommes convaincu que l'UX et le Branding sont indissociables dans la mise en place d'une expérience globale cohérente et efficace.</p>
+          <p>Les projets que nous menons s'étendent de la création d'un nouveau produit à la refonte visuelle d'une marque existante. Nous vous accompagnons durant tout le cycle de conception pour créer des expériences qui rendent vos utilisateurs heureux : user research, design sprint, product roadmap, identité visuelle, création de contenu, tests d'utilisateur, prototypage, développement front-end...</p>
+          <p>Nous pouvons également vous accompagner dans les phases projets qui suivent la livraison de nos travaux. Généralement, nos clients continuent à faire appel à nous pour les aider à piloter le développement global de leur produit, car nous avons acquis au fil de la prestation une fine connaissance du projet et du contexte dans lequel se trouve l'entreprise. Là encore, si vous souhaitez une compétence particulière que nous n'avons pas en interne, notre réseau nous permet de vous proposer l'expertise dont vous avez besoin au moment opportun.</p>
+        </div>
+      </div>
+      <div class="card-p-bottom mb-5 trigger">
+        <div class="card-p-bottom-title pointer">
+          <h2>Qu'est ce qui vous différencie d’une agence digitale ?</h2>
+          <i class="fas fa-caret-down fas-stylized"></i>
+        </div>
+        <div class="todeploy" style="display: none">
+          <p>Il existe un grand nombre d'agences implantées sur le territoire national, avec un niveau de qualité et d'exigence à la pointe des normes actuelles de l'UX. En tant que client, faire un choix dans cette multitude d'acteurs n'est souvent pas évident. Notre différenciation se fait sur plusieurs points :</p>
+          <p>Tout d'abord, fort de nos expériences passées au sein de grands cabinets de conseil, nous avons acquis des méthodes rigoureuses de gestion de projet et savons piloter des programmes stratégiques au sein d'organisations de toutes tailles.</p>
+          <p>De plus, nous nous engageons à passer du temps auprès de vos vrais utilisateurs pour comprendre réellement leurs besoins. Nous ne simulerons jamais de panels clients, ni supposeront de ce que pensent ou veulent vos utilisateurs finaux.</p>
+          <p>Ensuite, nous sommes proches de nos clients et adorons les impliqués dans nos travaux. Cela fait même parti des méthodologies que nous mettons en place : vous êtes avec nous pendant 2 à 3 jours lors de nos Design Sprint, nous vous faisons écouter les interviews en live pour que vous preniez connaissance des réels ressentis de vos utilisateurs, nous itérons ensemble sur chaque phase du projets pour assurer une conception optimale du produit créé.</p>
+          <p>Enfin, même si cela devrait être une généralité, nous avons la plus grande exigence quant à la qualité d'exécution de nos prestations et des livrables que nous remettons à nos clients. On ne peut pas se prétendre expert de l'UX et de la marque, sans être focalisé à 100% sur le rendu final.</p>
+          <p>Contrairement à la plupart des agences traditionnelles de conception d'expériences utilisateur, nous combinons les domaines d'activité de la création et du branding, à ceux de la conception de produits. En quelque sorte, nous avons mis sous un même toi une société de stratégie de marque et un cabinet de conseil UX.</p>
+        </div>
+      </div>
+      <div class="card-p-bottom mb-5 trigger">
+        <div class="card-p-bottom-title pointer">
+          <h2>Qu'entendez-vous par branding ?</h2>
+          <i class="fas fa-caret-down fas-stylized"></i>
+        </div>
+        <div class="todeploy" style="display: none">
+          <p>Par "Branding" vous pouvez entendre toute les opérations qui vont permettre de faire de votre entreprise une marque à part entière, unique et authentique. Vous vous démarquerez ainsi plus facilement sur votre marché et fidéliserez vos utilisateurs finaux par une expérience globale optimale.</p>
+          <p>Nos interventions sur ce domaine passent par la création d'identités visuelles, la compréhensions des perceptions utilisateurs, la stratégie de marque, la création de contenu, la conception de logos, l'élaboration de guidelines de marque... Nous sommes capables de vous accompagner tout au long de votre projet ou sur une partie si vous avez déjà des éléments de base sur lesquels vous avez travaillé.</p>
+        </div>
+      </div>
+      <div class="card-p-bottom mb-5 trigger">
+        <div class="card-p-bottom-title pointer">
+          <h2>Travaillez-vous aussi avec des entreprises de petites tailles ?</h2>
+          <i class="fas fa-caret-down fas-stylized"></i>
+        </div>
+        <div class="todeploy" style="display: none">
+          <p>Nous avons l'habitude de collaborer avec tout type d'organisation. Même si nous avons passé plus de temps au sein de grands groupes, nous accompagnons évidemment des start-ups, des petites sociétés, comme des entreprises de taille intermédiaire. </p>
+          <p>En tant que boutique conseil UX et Branding, nous avons un fort impact auprès des fondateurs de start-ups et entrepreneurs. Nous nous impliquons à 100% dans chaque mission et privilégions les rapports humains plutôt que les prestations en silo et à distance.</p>
+          <p>Basés à Marseille, nous avons à coeur de travailler avec les acteurs économiques locaux, pour donner vie à des idées innovantes et en phase avec l'environnement dynamique dans lequel nous nous trouvons. </p>
+          <p>Nous proposons des tarifs spéciaux pour les start-ups ou porteurs de projet auxquelles nous croyons. N'hésitez pas à nous contacter, pour en savoir plus.</p>
+        </div>
+      </div>
+      <div class="card-p-bottom mb-5 trigger">
+        <div class="card-p-bottom-title pointer">
+          <h2>Peut-on faire appelle à vous pour la création d'un outil interne destiné à nos collaborateurs ?</h2>
+          <i class="fas fa-caret-down fas-stylized"></i>
+        </div>
+        <div class="todeploy" style="display: none">
+          <p>Bien sûr ! Et vous avez entièrement raison de faire appel à un professionnel de l'UX pour ce type de projet. En effet, il est courant de penser que l'UX est uniquement destiné à une cible de consommateurs finaux. Or, l'utilisateur n'est pas forcément celui qui réalise l'acte d'achat, ça peut aussi être votre collaborateur ou votre partenaire commercial. Dans ce cas, pour quoi ne pas lui proposer la meilleure expérience possible ?</p>
+          <p>Vous vous êtes forcément déjà agacés de perdre du temps à réaliser des tâches à faible valeur ajoutée, ou énervés devant un outil au fonctionnement incompréhensible et peu intuitif. Si vous comptez sur une année, le nombre d'heures passées à contourner ces problèmes et que vous le ramenez à votre taux horaire... le montant peut vite s'avérer astronomique. </p>
+          <p>Donc oui, nous pouvons vous accompagner sur la réflexion et la mise en place d'un outil qui pourra améliorer l'efficacité de votre activité ou automatisera certaines tâches, et qui rendra surtout vos collaborateurs heureux en leur faisant vire une belle expérience d'utilisation. Nous sommes convaincus que vous bénéficierez d'un réel retour sur investissement. </p>
+        </div>
+      </div>
+      <div class="card-p-bottom mb-5 trigger">
+        <div class="card-p-bottom-title pointer">
+          <h2>Comment puis-je vous poser une autre question ?</h2>
+          <i class="fas fa-caret-down fas-stylized"></i>
+        </div>
+        <div class="todeploy" style="display: none">
+          <p>Ecrivez-nous, nous serons ravis de vous répondre dans les plus bref délais.  Et promis, vous ne serrez pas harcelé par une équipe de commerciaux pressés de vous vendre à tout prix un service dont vous n'avez pas besoin.</p>
+          <!-- question form -->
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-

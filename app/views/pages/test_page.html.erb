@@ -4,87 +4,12 @@
   </div>
 </div>
 <%= image_tag "bg-logo-black.svg", class: 'bg-logo-overflow' %>
-<div class="layout-container content-container row flex-column">
-  <div class="col-12 col-lg-8 smooth-text" style="display: none;">
-    <h2 class="big-title mt-5">Pourquoi ?</h2>
-    <p class="rubrique-description">Pourquoi les clients sont davantage fidèles à une marque plutôt qu'une autre ?
-    Pourquoi cette entreprise a un taux de transformation plus élevé que ses concurrents ?
-    Pourquoi mes collaborateurs n'utilisent pas le dernier outil mis en place ? Pourquoi nous regardons autant les avis laissés sur les réseaux ?
-    La réponse peut être synthétisée à travers une simple notion : l'expérience vécue. </p>
-  </div>
-  <div class="col-12 col-lg-8 self-flex-end mt-5 top-space bottom-space smooth-text" style="display: none;">
-    <h2 class="big-title mt-5">Irrationnels et subjectifs</h2>
-    <p class="rubrique-description">L'expérience est le principal levier de fidélisation et le facteur qui impacte le plus le
-    taux de transformation. La raison est simple : nos décisions sont à 90% guidées par nos émotions. En quelques sortes, la grande majorité
-    de nos choix sont irrationnels et cadrés par les expériences que nous vivons. A l'heure où de nombreuses organisations souhaitent entamer
-    leur transisition numérique, il apparait donc nécessaire de placer l'utilisateur au centre des réflexions pour gagner en efficacité. Chez Yusa,
-    nous sommes là pour ça : accompagner votre transformation pour qu'elle soit avant tout penser pour vos utilisateurs. </p>
-  </div>
-  <div class="mt-5 top-space bottom-space">
-    <h2 class="big-title">Nos services</h2>
-    <p class="rubrique-description">Que vous cherchez à établir votre stratégie de transformation digitale, optimisez votre présence sur Internet, améliorer votre positionnement, ou encore vous former aux dernières méthodologies de conception, nous sommes là pour vous accompagner.</p>
-  </div>
-
-  <div class="services-container ">
-    <ul class="list-no-style domain-list align-self-start">
-      <li class="p-1 m-3 button_slide slide_right"><a id="dom1" class="domain p-bold text-black" data-toggle="collapse" href="#serviceOne" role="button" aria-expanded="true" aria-controls="serviceOne">Stratégie digitale</a></li>
-      <li class="p-1 m-3 button_slide slide_right"><a id="dom2"class="domain p-bold text-black" data-toggle="collapse" href="#serviceTwo" role="button" aria-expanded="false" aria-controls="serviceTwo">Expérience utilisateur</a></li>
-      <li class="p-1 m-3 button_slide slide_right"><a id="dom3"class="domain p-bold text-black" data-toggle="collapse" href="#serviceTwo" role="button" aria-expanded="false" aria-controls="serviceTwo">Efficacité digitale</a></li>
-      <li class="p-1 m-3 button_slide slide_right"><a id="dom4"class="domain p-bold text-black" data-toggle="collapse" href="#serviceTwo" role="button" aria-expanded="false" aria-controls="serviceTwo">Conception et création</a></li>
-      <li class="p-1 m-3 button_slide slide_right"><a id="dom5"class="domain p-bold text-black" data-toggle="collapse" href="#serviceTwo" role="button" aria-expanded="false" aria-controls="serviceTwo">Formation</a></li>
-    </ul>
-    <div class="">
-      <div class="collapse show" data-domain="dom1">
-        <ul class="mt-3 list-no-style">
-          <li class="pb-3">Roadmap digitale</li>
-          <li class="pb-3">Reposionnement</li>
-          <li class="pb-3">Identification d'objectifs business</li>
-          <li class="pb-3">Ideation workshops</li>
-          <li class="pb-3">Prospective business</li>
-          <li class="pb-3">Product management de transition</li>
-          <li class="pb-3">Lancement de nouvelles offres</li>
-        </ul>
-      </div>
-      <div class="collapse" data-domain="dom2">
-        <ul class="mt-3 list-no-style">
-          <li class="pb-3">Brief UX</li>
-          <li class="pb-3">Audit d'ergonomie</li>
-          <li class="pb-3">Interviews utilisateurs</li>
-          <li class="pb-3">Tests d'utilisabilité</li>
-          <li class="pb-3">Design Sprint</li>
-          <li class="pb-3">Parcours utilisateur</li>
-        </ul>
-      </div>
-      <div class="collapse" data-domain="dom3">
-        <ul class="mt-3 list-no-style">
-          <li class="pb-3">Digitalisation de processus</li>
-          <li class="pb-3">Signature électronique</li>
-          <li class="pb-3">Chatbot</li>
-          <li class="pb-3">Web analytics & SEO</li>
-          <li class="pb-3">Growth Hacking</li>
-          <li class="pb-3">Market place</li>
-        </ul>
-      </div>
-      <div class="collapse" data-domain="dom4">
-        <ul class="mt-3 list-no-style">
-          <li class="pb-3">Refonte de site et application web</li>
-          <li class="pb-3">Prototypage</li>
-          <li class="pb-3">Brand Identity</li>
-          <li class="pb-3">Création de contenu</li>
-          <li class="pb-3">Développement web</li>
-          <li class="pb-3">Design d'interface (UI)</li>
-          <li class="pb-3">Création de design system</li>
-        </ul>
-      </div>
-      <div class="collapse" data-domain="dom5">
-        <ul class="mt-3 list-no-style">
-          <li class="pb-3">Management de la conception UX</li>
-          <li class="pb-3">Prototypage d'application</li>
-          <li class="pb-3">Intégration web FrontEnd</li>
-          <li class="pb-3">Design Sprint workshops</li>
-          <li class="pb-3">Méthodologies de User Research</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="layout-container content-container">
+  <% if current_page?(home_path) %>
+    <%= image_tag("logo-full.svg") %>
+  <% else %>
+    <%= image_tag("logo-full-white.svg") %>
+  <% end %>
 </div>
+
+

@@ -83,4 +83,11 @@
     color: $black;
   }
 }
+
+.slide_right:focus-within {
+  box-shadow: inset 400px 0 0 0 #FFD02B;
+  & a:focus-within {
+    color: $black;
+  }
+}
 // ----------

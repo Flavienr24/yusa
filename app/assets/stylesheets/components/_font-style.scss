@@ -104,6 +104,15 @@
     padding-left: 0px;
   }
 
+  .text-90d {
+    transform: rotate(-90deg);
+    width: 150px;
+    height: fit-content;
+    text-align: center;
+    text-align: end;
+  }
+
+
     // Smartphone
     @media(max-width: 420px) {
       .hero-title {

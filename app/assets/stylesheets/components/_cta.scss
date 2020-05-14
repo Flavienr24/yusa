@@ -75,6 +75,8 @@
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
+  padding: 0.25rem;
+  margin: 1rem;
 }
 
 .slide_right:hover {
@@ -91,3 +93,15 @@
   }
 }
 // ----------
+
+@media (max-width: 420px) {
+  .fas-stylized {
+    margin: 0em 0em 0.2em 1em;
+  }
+
+  .button_slide {
+    width: min-content;
+    margin: 0rem 1rem 1rem 0rem;
+    padding: 0.2rem 0.3rem 0.2rem 0.2rem;
+  }
+}

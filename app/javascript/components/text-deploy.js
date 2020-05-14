@@ -18,7 +18,7 @@ triggerItemList.forEach((expertise) => {
 });
 
 
-// ---------- Services display on About ----------
+// ---------- Services display on Home ----------
 
 
 // repérer la div qui contient les domains
@@ -27,10 +27,19 @@ const domainItems = document.querySelectorAll('.domain');
 for (let i = 0 ; i < domainItems.length; i++) {
    let itemClicked = domainItems[i];
    itemClicked.addEventListener('click' , getDomainID);
+
  }
 
 function getDomainID(event) {
+  // enlever le hover sur le domain
+  if(document.querySelector('.slide_right-active'))
+      document.querySelector('.slide_right-active').classList.remove('slide_right-active');
+  // identifier l'ID du domain
   let domainID = event.target.id;
+  // identifier l'élément cliqué
+  let domainClicked = event.target.parentNode;
+  // ajouter le hover sur l'élément cliqué
+  domainClicked.classList.add('slide_right-active');
 // récupérer l'ID des services du domaine affiché
   let servID = document.querySelector('.collapse.show').dataset.domain;
   displayServ(domainID, servID);

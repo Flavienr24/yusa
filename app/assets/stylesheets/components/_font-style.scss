@@ -1,143 +1,138 @@
+body {
+  color: $black;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.02rem;
+}
 
-
-
-  body {
-    color: $black;
-    font-family: 'Montserrat', sans-serif;
-
-;
-
-  }
-
-  a {
+a {
+  text-decoration: none;
+  &:hover {
     text-decoration: none;
-    &:hover {
-      text-decoration: none;
-    }
   }
+}
 
 
-  h2 {
-    // font-style: normal;
-    font-weight: 300;
-    font-size: 1.375em;
-    line-height: 29px;
-  }
+h2 {
+  // font-style: normal;
+  font-weight: 300;
+  font-size: 1.375em;
+  line-height: 29px;
+}
 
-  .trix-content h1 {
-    @extend h2;
-  }
+.trix-content h1 {
+  @extend h2;
+}
 
 
-  h3 {
-    // font-style: normal;
-    font-weight: bold;
-    font-size: 1.5em;
-    line-height: 28px;
-  }
+h3 {
+  // font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 28px;
+}
 
-  .p-bold {
-    // font-style: normal;
-    font-weight: 700;
-    font-size: 1em;
-    line-height: 20px;
-  }
+.p-bold {
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.8rem;
+}
 
-  p {
-    // font-style: normal;
-    font-weight: 300;
-    font-size: 1em;
-    line-height: 24px;
-  }
+p {
+  // font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.8rem;
+}
 
-  .description {
-    // font-style: normal;
-    font-weight: 300;
-    font-size: 0.75em;
-    line-height: 20px;
-  }
+.description {
+  // font-style: normal;
+  font-weight: 300;
+  font-size: 0.75em;
+  line-height: 20px;
+}
 
-  .big-title {
-    // font-style: normal;
-    font-weight: 900;
-    font-size: 2.5em;
-    line-height: 1.25em;
-    padding-bottom: 1em;
-  }
+.big-title {
+  // font-style: normal;
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: 1.25em;
+  padding-bottom: 1em;
+}
 
-  .rubrique-title {
-    // font-style: normal;
-    font-weight: bold;
-    font-size: 2em;
-    line-height: 42px;
-  }
+.rubrique-title {
+  // font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 42px;
+}
 
-  .rubrique-description {
-    // font-style: normal;
-    font-weight: 200;
-    font-size: 1.375em;
-    line-height: 30px;
-  }
+.rubrique-description {
+  // font-style: normal;
+  font-weight: 200;
+  font-size: 1.375em;
+  line-height: 30px;
+}
 
-  .contact-email {
-    // font-style: normal;
-    font-weight: normal;
-    font-size: 1.25em;
-    line-height: 28px;
-    text-decoration-line: underline;
-    display: block;
+.contact-email {
+  // font-style: normal;
+  font-weight: normal;
+  font-size: 1.25em;
+  line-height: 28px;
+  text-decoration-line: underline;
+  display: block;
+  color: $white;
+  &:hover {
     color: $white;
-    &:hover {
-      color: $white;
+  }
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 4.4em;
+  line-height: 1.2em;
+  letter-spacing: -0.008em;
+}
+
+.list-no-style {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.text-90d {
+  transform: rotate(-90deg);
+  width: 150px;
+  height: fit-content;
+  text-align: center;
+  text-align: end;
+}
+
+
+  // Smartphone
+  @media(max-width: 420px) {
+    .hero-title {
+      // font-style: normal;
+      font-weight: 700;
+      font-size: 2em;
+      line-height: 1.3em;
+    }
+    .rubrique-title {
+      // font-style: normal;
+      font-size: 1.4em;
+      line-height: 33px;
+    }
+    .big-title {
+      // font-style: normal;
+      font-size: 2em;
     }
   }
 
-  .hero-title {
-    font-weight: 700;
-    font-size: 4.4em;
-    line-height: 1.2em;
-    letter-spacing: -0.008em;
-  }
-
-  .list-no-style {
-    list-style: none;
-    padding-left: 0px;
-  }
-
-  .text-90d {
-    transform: rotate(-90deg);
-    width: 150px;
-    height: fit-content;
-    text-align: center;
-    text-align: end;
-  }
-
-
-    // Smartphone
-    @media(max-width: 420px) {
-      .hero-title {
-        // font-style: normal;
+  // Tablet
+  @media(min-width: 420px) and (max-width: 770px) {
+    .hero-title {
         font-weight: 700;
-        font-size: 2em;
-        line-height: 1.3em;
-      }
-      .rubrique-title {
-        // font-style: normal;
-        font-size: 1.4em;
-        line-height: 33px;
-      }
-      .big-title {
-        // font-style: normal;
-        font-size: 2em;
-      }
+        font-size: 3em;
+        line-height: 60px;
     }
-
-    // Tablet
-    @media(min-width: 420px) and (max-width: 770px) {
-      .hero-title {
-          font-weight: 700;
-          font-size: 3em;
-          line-height: 60px;
-      }
-    }
-    // ----------------------------
+  }
+  // ----------------------------

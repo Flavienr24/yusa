@@ -1,4 +1,4 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_admin!, except: [:landing]
+  before_action :authenticate_admin!, except: [:home, :about]
 
 end

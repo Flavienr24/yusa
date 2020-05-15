@@ -15,4 +15,7 @@ class PagesController < ApplicationController
   def test_page
   end
 
+  def mentions
+  end
+
 end

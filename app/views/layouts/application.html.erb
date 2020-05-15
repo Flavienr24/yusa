@@ -10,10 +10,10 @@
       <div class="header">
         <%= link_to root_path do %>
         <div id="yusa-logo-header">
-          <% if current_page?(root_path) %>
-            <%= image_tag("logo-full.svg") %>
-          <% else %>
+          <% if current_page?(about_path) %>
             <%= image_tag("logo-full-white.svg") %>
+          <% else %>
+            <%= image_tag("logo-full.svg") %>
           <% end %>
         </div>
         <% end %>
@@ -72,7 +72,7 @@
           <div class="dynamic-location">
           <p class="p-bold">à 150 m de la Méditérannée</p class="p-bold">
         </div>
-        <div class="mt-4 description">YUSA.DIGITAL - COPYRIGHT © 2020 - MARSEILLE<br>ALL RIGHTS RESERVED</div>
+        <div class="mt-4 description">YUSA.DIGITAL - COPYRIGHT © 2020 - MARSEILLE<br>ALL RIGHTS RESERVED - <a href="/mentions" class="text-white">MENTIONS LEGALES</a></div>
       </div>
     </div>
   </div>

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :cases
   resources :articles
   get 'about', to: 'pages#about', as: :about
+  get 'mentions', to: 'pages#mentions', as: :mentions
   # get 'landing', to: 'pages#landing', as: :landing
   # get 'home', to: 'pages#home', as: :home
   # Test page for front dev

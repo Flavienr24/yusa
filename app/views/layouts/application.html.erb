@@ -11,9 +11,9 @@
         <%= link_to root_path do %>
         <div id="yusa-logo-header">
           <% if current_page?(about_path) %>
-            <%= image_tag("logo-full-white.svg") %>
+            <%= image_tag("logo-full-white.svg", alt: 'logo yusa') %>
           <% else %>
-            <%= image_tag("logo-full.svg") %>
+            <%= image_tag("logo-full.svg", alt: 'logo yusa') %>
           <% end %>
         </div>
         <% end %>
@@ -26,7 +26,7 @@
           <ul id="menu">
             <div id="yusa-logo-menu">
               <%= link_to root_path do %>
-              <%= image_tag("logo-full.svg") %>
+              <%= image_tag("logo-full.svg", alt: 'logo yusa') %>
               <% end %>
             </div>
             <div class="list-menu">
@@ -58,7 +58,7 @@
               <p class="py-5 pr-5">Yusa accélère votre transformation digitale en vous accompagnant dans la création de produits et de services digitaux.</p>
             </div>
             <div class="d-flex flex-column col-12 col-md-4">
-              <%= image_tag "logo-full-white.svg", style: 'width: 122px;', class: 'mb-4' %>
+              <%= image_tag "logo-full-white.svg", style: 'width: 122px;', class: 'mb-4', alt: 'logo yusa' %>
               <!-- social icons -->
               <a href="/about" class="text-white pb-3"><u>Qui sommes nous ?</u></a>
               <a href="/" class="text-white pb-3"><u>Accueil</u></a>

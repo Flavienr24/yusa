@@ -1,7 +1,7 @@
-<title>YUSA • Transformation Digitale & Expérience Utilisateur | Marseille</title>
+<title>YUSA Transformation Digitale & Expérience Utilisateur à Marseille</title>
 <%= csrf_meta_tags %>
 <%= csp_meta_tag %>
-<meta name="description" content="Agence conseil en transformation digitale et expérience utilisateur. Nous vous aidons à améliorer votre efficacité opérationnelle et votre présence digitale.">
+<meta name="description" content="Agence conseil en transformation digitale et expérience utilisateur basée à Marseille. Nous vous aidons à améliorer votre efficacité opérationnelle et votre présence digitale.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -13,6 +13,21 @@
 <meta name="theme-color" content="#1E1E1E">
 <meta name="msapplication-navbutton-color" content="#1E1E1E">
 <meta name="apple-mobile-web-app-status-bar-style" content="#1E1E1E">
+<!-- Schema org -->
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "url" : "http://www.yusa.digital",
+  "name" : "Yusa",
+  "slogan" : "Sprint your digital Transformation",
+  "description" : "Agence spécialisée en transformation digitale et expérience utilisateur, basée à Marseille",
+  "logo": {
+        "@type": "ImageObject",
+        "url": "<%= "http://www.yusa.digital"+image_path("monograme-black.svg") %>"
+  },
+  "location" : "Marseille",
+</script>
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://www.yusa.digital/">

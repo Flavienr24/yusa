@@ -37,3 +37,14 @@
   color: $black;
 }
 
+.card-methode {
+  background: #F3F3F3;
+  box-shadow: -9px -12px 36px #FFFFFF, 9px 12px 24px rgba(183, 183, 183, 0.33), -6px -18px 4px rgba(255, 255, 255, 0.38), inset 4px 6px 6px rgba(255, 255, 255, 0.08);
+  border-radius: 17px;
+  padding: 1rem 2rem;
+  &:hover {
+    background: #FFD02B;
+    box-shadow: 0px 4px 55px rgba(255, 208, 43, 0.84);
+    border-radius: 17px;
+  }
+}

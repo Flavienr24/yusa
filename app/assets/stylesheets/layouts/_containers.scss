@@ -18,7 +18,7 @@
   text-align: center;
   margin: 0px auto;
   display: flex;
-  max-width: 480px;
+  max-width: 500px;
 }
 
 .content-container {
@@ -89,7 +89,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow:dense;
-  grid-gap: 40px;
+  grid-gap: 25px;
+  justify-items: center;
 }
 
 .self-flex-end {
@@ -97,20 +98,33 @@
 }
 
 .domain-list {
-  width: 58%;
+  min-width: 35%;
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  flex-direction: column;
+  & a {
+    color: $black;
+  }
 }
 
 .services-container {
-  height: 280px;
   display: flex;
 }
 
 .services-list {
   border-left: 1px solid;
-  padding-left: 1rem;
+  padding-left: 10%;
   height: fit-content;
+}
+
+.row-to-column {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  & img {
+    width: 35%;
+    margin-right: 10%;
+  }
 }
 
 // ------------- Media Queries ---------------
@@ -118,6 +132,7 @@
   .grid-2c {
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
 }
 
@@ -144,9 +159,14 @@
       text-align: left;
   }
 
+  .left-align-60 {
+      width: 100%;
+      text-align: left;
+  }
+
   .center-item {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
   }
 
   .self-flex-end {
@@ -163,20 +183,50 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3rem;
+    flex-direction: row;
+  }
+
+  .services-list {
+    border-left: none;
+    padding-left: 0px;
   }
 
   .col-12 {
     padding-right: 0px;
     padding-left: 0px;
   }
-}
 
-    // Tablet
-@media(min-width: 420px) and (max-width: 770px) {
-  .content-container {
-    padding: 60px 2.5em 96px 2.5em;
+  .row-to-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto 2rem auto;
+      & img {
+        width: 100%;
+      }
   }
 }
+
+
+    // Tablet
+@media(min-width: 420px) and (max-width: 880px) {
+  .content-container {
+    padding: 60px 3em 96px 3em;
+  }
+  .row-to-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    margin: 0px auto 2rem auto;
+      & img {
+        width: 100%;
+      }
+    }
+  }
 
 
 

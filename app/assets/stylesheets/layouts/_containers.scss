@@ -22,7 +22,7 @@
 }
 
 .content-container {
-  padding: 60px 5em 96px 5em;
+  padding: 60px 4.5em 96px 4.5em;
   margin: auto;
   max-width: 1100px;
 }
@@ -109,6 +109,7 @@
 
 .services-container {
   display: flex;
+  margin-top: 2.5rem;
 }
 
 .services-list {
@@ -125,6 +126,10 @@
     width: 35%;
     margin-right: 10%;
   }
+}
+
+.row-no-margin-top {
+  margin-top: 0px !important;
 }
 
 // ------------- Media Queries ---------------
@@ -176,6 +181,7 @@
   .services-container {
     height: auto;
     display: block;
+    margin-top: 2rem;
   }
 
   .domain-list {
@@ -203,9 +209,16 @@
     text-align: center;
     width: 100%;
     margin: 0px auto 2rem auto;
-      & img {
-        width: 100%;
-      }
+    & img {
+      width: 100%;
+    }
+    & a {
+      width: 100%;
+    }
+  }
+
+  .row-no-margin-top {
+    margin-top: 24px !important;
   }
 }
 

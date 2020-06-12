@@ -7,13 +7,14 @@
   </div>
 </section>
 <!-- Start-card -->
-<div class="bg-black min-100-vh card-rounded overlay top-space bottom-space pb-5">
+<div class="bg-black min-100-vh card-rounded overlay top-space">
   <div class="content-container">
     <!-- Expertises -->
     <div class="grid-2c bottom-space">
       <div class="bottom-space pt-2">
         <h1 class="rubrique-title">Chez Yusa nous concevons, testons et développons rapidement vos idées de sites web ou d'applications pour créer le produit digital que vos utilisateurs désirent.</h1>
         <h2 class="rubrique-description mt-4">Passez de l'idée au produit, sans risque, sans dépendance et en maîtrisant votre budget.</h2>
+        <%= link_to 'concrétisez votre idée', "/#offres", class: 'cta-primary' %>
       </div>
       <!-- Value -->
       <div class="offers">
@@ -71,16 +72,17 @@
 <!-- Offers -->
 <div class="bg-light">
   <div class="content-container">
+    <span id="offres"></span>
     <div class="my-5 top-space">
       <h2 class="big-title">NOTRE OFFRE</h2>
       <p class="rubrique-description left-align-80">Nos prestations sont réalisées sous forme de sprints. Des itérations de 2 à 4 semaines pour expérimenter, tester et créer les produits digitaux les plus en adéquation avec vos objectifs et les attentes des utilisateurs.</p>
-      <div class="services-container top-space">
+      <div class="services-container top-space bottom-space">
         <ul class="list-no-style domain-list align-self-start">
           <li class="p-1 m-3 button_slide  slide_right-active"><a id="dom1" class="domain rubrique-title" data-toggle="collapse" href="#serviceOne" role="button" aria-expanded="true" aria-controls="serviceOne">CRAFT</a></li>
           <li class="p-1 m-3 button_slide "><a id="dom2"class="domain rubrique-title" data-toggle="collapse" href="#serviceTwo" role="button" aria-expanded="false" aria-controls="serviceTwo">FOCUS</a></li>
           <li class="p-1 m-3 button_slide "><a id="dom3"class="domain rubrique-title" data-toggle="collapse" href="#serviceTwo" role="button" aria-expanded="false" aria-controls="serviceTwo">LEAD</a></li>
         </ul>
-        <div class="services-list">
+        <div class="services-list card-on-xs">
           <div class="collapse show" data-domain="dom1">
             <h3 class="p-3 bg-black">Votre nouveau produit digital, conçu, testé et approuvé par vos utililisateurs</h3>
             <p class="rubrique-description font-weight-bold mt-5">VOS BESOINS</p>
@@ -92,6 +94,7 @@
             </ul>
             <p class="rubrique-description font-weight-bold mt-5">CONTENU DU SPRINT</p>
             <p>Phases d'expérimentations comprenant l'idéation, la conception et les tests utilisateurs. Nous prototypons vos produits ou réalisons des applications no-code opérationnelles et prêtes à l'emploi.</p>
+            <a href="#" class="cta-secondary-white btn-left-xl">Détails de l'offre</a>
           </div>
           <div class="collapse" data-domain="dom2">
             <h3 class="p-3 bg-black">Des retours utilisateurs pour agir vite et prendre les bonnes décisions</h3>
@@ -119,6 +122,7 @@
           </div>
         </div>
       </div>
+      <a href="#" class="cta-primary-black top-space">Nous contacter</a>
     </div>
     <div class="my-5 top-space">
       <h2 class="hero-title top-space text-center mb-5">In Prototype We Trust!</h2>
@@ -140,14 +144,14 @@
       </div>
     </div>
 
-    <div class="my-5 top-space">
+    <div class="my-5 top-space bottom-space">
       <h2 class="big-title mb-5">NOTRE MÉTHODE</h2>
       <div class="grid-2c">
         <div class="card-methode">
           <h3>1. Kickstart</h3>
           <p class="pt-2">Notre première rencontre. Nous prenons connaissance de votre problématique, nous identifions les dépendances et déterminons les objectifs business à atteindre.</p>
         </div>
-        <div class="card-methode">
+        <div class="card-methode margin-top-xs">
           <h3>2. Prototype</h3>
           <p class="pt-2">Passer de l'idée au concret pour tester rapidement le "User Fit" de votre nouveau produit digital. Application réelle ou maquettes fonctionnelles, nous mettons en place le meilleur dispositif pour votre besoin.</p>
         </div>
@@ -157,12 +161,13 @@
           <h3>3. Validation</h3>
           <p class="pt-2">Nous rencontrons vos utilisateurs pour qu'ils testent le produit. Leurs retours nous permettent de valider la réalisation ou d'expérimenter d'autres hypothèses.</p>
         </div>
-        <div class="card-methode">
+        <div class="card-methode margin-top-xs">
           <h3>4. Exécution</h3>
           <p class="pt-2">En fonction du besoin et du périmètre, nous vous accompagnons dans le développement et la gestion de votre produit digital.</p>
         </div>
       </div>
     </div>
+    <a href="#" class="cta-primary-black">On démarre ?</a>
   </div>
 </div>
 <div class="bg-black">
@@ -170,18 +175,26 @@
     <div class="my-5 top-space bottom-space">
       <h2 class="big-title">Yus'Academy</h2>
       <div class="grid-2c">
-        <div>
+        <div class="pt-3">
           <h3>Former vos équipes aux méthodologies de demain.</h3>
-          <p class="mt-4">Nous proposons des formations aux méthodologies UX et à la conception collaborative, basées sur vos propres projets. Ainsi, vos collaborateurs deviennent autonomes, prennent en main les outils adéquats et font progresser l’organisation vers une transformation digitale réussie.</p>
+          <p class="mt-4">Nous proposons des formations aux méthodologies UX et à la conception collaborative, basées sur vos propres projets. </p>
+          <p>Nos formations permettrons à vos collaborateurs de devenir autonomes. Ils prendront en main les outils adéquats et feront progresser votre organisation vers une transformation digitale réussie.</p>
+
         </div>
-        <div class="rubrique-description mt-4">
-          <ul class="list-no-style">
+        <div class="mt-4">
+          <ul class="rubrique-description list-no-style">
             <li class="font-weight-bold mb-4">Management de la conception UX</li>
             <li class="font-weight-bold mb-4">Prototypage d'application</li>
+            <li class="font-weight-bold mb-4">Product Management</li>
             <li class="font-weight-bold mb-4">Intégration web FrontEnd</li>
             <li class="font-weight-bold mb-4">Design Sprint workshops</li>
             <li class="font-weight-bold mb-4">Méthodologies de User Research</li>
           </ul>
+        </div>
+        <div class="row-to-column">
+          <!-- CTA en savoir plus -->
+          <!-- <a href="#" class="cta-secondary-black row-no-margin-top">Détails des formations</a> -->
+          <a href="/#landing-contact" class="cta-secondary-yellow row-no-margin-top">Contactez nous</a>
         </div>
       </div>
     </div>
@@ -191,6 +204,13 @@
 <div class="content-container">
   <span id="landing-contact"></span>
   <div class="grid-2c top-space">
+    <div>
+      <div class="d-inline-block">
+        <h2 class="rubrique-description font-weight-bold pb-3">Donner vie à vos idées, vous accompagner dans l’innovation, analyser votre marché pour mieux le satisfaire.</h2>
+        <p class="rubrique-description">Ces objectifs reposent sur la même ambition :  être en mouvement, continuer d’avancer et d’innover dans un monde en perpetuel changement. Chez Yusa nous vous aidons à suivre cette ambition, en nous appuyant sur ceux qui font de votre projet un succès : vos utilisateurs.</p >
+      </div>
+      <%= link_to 'Pourquoi Yusa ?', about_path, class: 'cta-secondary-white' %>
+    </div>
     <div class="form-card">
       <h3>Vous avez un projet ?</h3>
       <p class="rubrique-description pb-3">Echangeons.</p>
@@ -201,13 +221,6 @@
       formId: "66fba0ef-d253-4466-96f7-8045619cce88"
       });
       </script>
-    </div>
-    <div>
-      <div class="d-inline-block">
-        <h2 class="rubrique-description font-weight-bold pb-3">Donner vie à vos idées, vous accompagner dans l’innovation, analyser votre marché pour mieux le satisfaire.</h2>
-        <p class="rubrique-description">Ces objectifs reposent sur la même ambition :  être en mouvement, continuer d’avancer et d’innover dans un monde en perpetuel changement. Chez Yusa nous vous aidons à suivre cette ambition, en nous appuyant sur ceux qui font de votre projet un succès : vos utilisateurs.</p >
-      </div>
-      <%= link_to 'Pourquoi Yusa ?', about_path, class: 'cta-primary' %>
     </div>
   </div>
 </div>

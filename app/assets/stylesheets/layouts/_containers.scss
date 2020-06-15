@@ -181,14 +181,14 @@
   .services-container {
     height: auto;
     display: block;
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   .domain-list {
     width: auto;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     flex-direction: row;
   }
 
@@ -236,7 +236,8 @@
     width: 100%;
     margin: 0px auto 2rem auto;
       & img {
-        width: 100%;
+        width: 50%;
+        margin-right: 0%;
       }
     }
   }

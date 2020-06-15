@@ -6,10 +6,11 @@
   display: block;
   width: fit-content;
   margin: 52px auto 0px auto;
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 2rem;
   background-color: $yellow;
   border-radius: 5px;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   color: $black !important;
   cursor: pointer;
@@ -180,5 +181,12 @@
     .cta-secondary-black {
     min-width: 100%;
     margin-bottom: 1rem;
+  }
+  .cta-primary {
+    padding: 0.8rem 1.8rem;
+  }
+
+  .fas-stylized {
+    margin: 0em 0em 0.2em 2em;
   }
 }

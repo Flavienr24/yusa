@@ -31,7 +31,7 @@
             </div>
             <div class="list-menu">
               <div class="link-menu">
-                <a href="/#landing-contact"><li>Accélérons vos projets</li></a>
+                <a href="/#offres"><li>Concrétisez vos projets</li></a>
                 <a href="/about"><li>Qui sommes-nous ?</li></a>
               </div>
               <div class="top-space">
@@ -61,6 +61,7 @@
               <%= image_tag "logo-full-white.svg", style: 'width: 122px;', class: 'mb-4', alt: 'logo yusa' %>
               <!-- social icons -->
               <a href="/about" class="text-white pb-3"><u>Qui sommes nous ?</u></a>
+              <a href="/#offres" class="text-white pb-3"><u>Concrétisez vos idées</u></a>
               <a href="/" class="text-white pb-3"><u>Accueil</u></a>
               <!--                 <a href="/cases" class="text-white pb-3"><u>Cas clients</u></a>
               <a href="/articles" class="text-white pb-3"><u>Reviews</u></a> -->
@@ -69,14 +70,11 @@
         </div>
         <div class="footer">
           <p class="mb-0">Fabriqué avec 💙 à Marseille</p>
-          <div class="dynamic-location">
-          <p class="p-bold">à 150 m de la Méditérannée</p class="p-bold">
+          <div class="mt-4 description">YUSA.DIGITAL - COPYRIGHT © 2020 - MARSEILLE<br>ALL RIGHTS RESERVED - <a href="/mentions" class="text-white">MENTIONS LEGALES</a></div>
         </div>
-        <div class="mt-4 description">YUSA.DIGITAL - COPYRIGHT © 2020 - MARSEILLE<br>ALL RIGHTS RESERVED - <a href="/mentions" class="text-white">MENTIONS LEGALES</a></div>
       </div>
     </div>
-  </div>
-  <%= render 'shared/flashes' %>
-  <%= javascript_pack_tag "application" %>
-</body>
+    <%= render 'shared/flashes' %>
+    <%= javascript_pack_tag "application" %>
+  </body>
 </html>

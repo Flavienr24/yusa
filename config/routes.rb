@@ -7,9 +7,10 @@ Rails.application.routes.draw do
   resources :articles
   get 'about', to: 'pages#about', as: :about
   get 'mentions', to: 'pages#mentions', as: :mentions
+  get 'formations', to: 'pages#formations', as: :formations
   # get 'landing', to: 'pages#landing', as: :landing
-  # get 'home', to: 'pages#home', as: :home
-  # Test page for front dev
+
+  # -----------Test page for front dev-----------
   # get 'test_page', to: 'pages#test_page', as: :test_page
 
 

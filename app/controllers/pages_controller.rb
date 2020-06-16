@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   def about
   end
 
+  def formations
+  end
+
   def landing
     render layout: "landing"
   end

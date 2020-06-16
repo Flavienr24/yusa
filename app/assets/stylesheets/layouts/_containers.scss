@@ -18,7 +18,7 @@
   text-align: center;
   margin: 0px auto;
   display: flex;
-  max-width: 500px;
+  max-width: 55%;
 }
 
 .content-container {
@@ -47,7 +47,7 @@
 }
 
 .home-banner {
-  height: 90vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -132,7 +132,10 @@
   margin-top: 0px !important;
 }
 
+
+
 // ------------- Media Queries ---------------
+
 @media(max-width: 680px) {
   .grid-2c {
     display: grid;
@@ -147,6 +150,10 @@
     padding: 60px 10% 96px 10%;
     margin: auto;
     max-width: 1000px;
+  }
+
+  .home-banner {
+    height: 95vh;
   }
 
   .grid-2c {

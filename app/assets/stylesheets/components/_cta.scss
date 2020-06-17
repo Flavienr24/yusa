@@ -171,6 +171,18 @@
   .btn-left-xl {
     margin-left: auto;
   }
+
+  .fixed-cta-mobile {
+    position: fixed;
+    bottom: 15%;
+    align-self: center;
+    box-shadow: 0px 0px 35px rgba(30, 30, 30, 0.46);
+    z-index: 10;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 880px) {

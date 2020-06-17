@@ -47,7 +47,7 @@
 }
 
 .home-banner {
-  height: 85vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -69,7 +69,7 @@
 }
 
 .full-screen {
-  height: 105vh;
+  height: 99vh;
   min-height: 560px;
   position: relative;
 }
@@ -150,10 +150,6 @@
     padding: 60px 10% 96px 10%;
     margin: auto;
     max-width: 1000px;
-  }
-
-  .home-banner {
-    height: 95vh;
   }
 
   .grid-2c {

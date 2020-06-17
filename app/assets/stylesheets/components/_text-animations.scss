@@ -7,7 +7,7 @@
   $animationDuration: 50;
   $animationElement: span;
   $animationElementsCount: 100;
-  $delayBetweenLetters: 0.2;
+  $delayBetweenLetters: 0.5;
 
   #{$animationElement} {
     animation-name: anim-text-flow-keys;
@@ -20,7 +20,7 @@
   @keyframes anim-text-flow-keys {
     @for $i from 0 through $animationSteps {
       #{percentage($i * (1 / $animationSteps))} {
-        color: hsla(240, 10%, random(100), 1);
+        color: hsla(240, 10%, random(80), 1);
       }
     }
   }

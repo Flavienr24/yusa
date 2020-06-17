@@ -10,10 +10,10 @@
       <div class="header">
         <%= link_to root_path do %>
         <div id="yusa-logo-header">
-          <% if current_page?(about_path) %>
-            <%= image_tag("logo-full-white.svg", alt: 'logo yusa') %>
-          <% else %>
+          <% if current_page?(root_path) %>
             <%= image_tag("logo-full.svg", alt: 'logo yusa') %>
+          <% else %>
+            <%= image_tag("logo-full-white.svg", alt: 'logo yusa') %>
           <% end %>
         </div>
         <% end %>
@@ -32,7 +32,8 @@
             <div class="list-menu">
               <div class="link-menu">
                 <a href="/#offres"><li>Concrétisez vos projets</li></a>
-                <a href="/about"><li>Qui sommes-nous ?</li></a>
+                <a href="/formations"><li>Nos formations</li></a>
+                <a href="/about"><li>À propos</li></a>
               </div>
               <div class="top-space">
                 <div class="big-title pb-4 pt-4">Vous avez un projet ?</div>
@@ -62,6 +63,7 @@
               <!-- social icons -->
               <a href="/about" class="text-white pb-3"><u>Qui sommes nous ?</u></a>
               <a href="/#offres" class="text-white pb-3"><u>Concrétisez vos idées</u></a>
+              <a href="/formations" class="text-white pb-3"><u>Nos formations</u></a>
               <a href="/" class="text-white pb-3"><u>Accueil</u></a>
               <!--                 <a href="/cases" class="text-white pb-3"><u>Cas clients</u></a>
               <a href="/articles" class="text-white pb-3"><u>Reviews</u></a> -->

@@ -2,15 +2,15 @@
   <div class="content-container home-banner z-index-50 pb-1">
     <div class="hero-title">Yus'Academy</div>
     <div class="rubrique-description mt-4 left-align-80">Des formations basées sur vos propres sujets. Faite d'une pierre deux coups : formez vos équipes et accélérez vos projets.</div>
-    <%= link_to 'Nos formations', "./#nos-formations", class: 'cta-primary ml-0' %>
+    <a href="https://form.typeform.com/to/k3i4jYIv" class="cta-primary btn-left-xl fixed-cta-mobile top-space typeform-share button" data-mode="drawer_right" data-submit-close-delay="2" target="_blank">En savoir plus</a>
     <%= image_tag 'arrow-d-white.svg', class: 'mt-5 mb-2' %>
   </div>
 </div>
 <%= image_tag "bg-logo-black.svg", class: 'bg-logo-overflow' %>
 <div class="bg-light">
   <div class="content-container">
+    <span id="nos-formations"></span>
     <div class="top-space">
-      <span id="nos-formations"></span>
       <h1 class="big-title">NOS FORMATIONS</h1>
       <div class="rubrique-description left-align-80 mb-5">Pour des collaborateurs plus autonomes et mieux préparés aux méthodologies de Product Management.</div>
       <!-- Formations ligne 1-->
@@ -107,7 +107,7 @@
         </div>
       </div>
     </div>
-    <a href="https://form.typeform.com/to/k3i4jYIv" class="cta-primary-black top-space typeform-share button" data-mode="drawer_right" data-submit-close-delay="2" target="_blank">Nous contacter</a>
+    <a href="https://form.typeform.com/to/k3i4jYIv" class="cta-primary-black hidden-mobile top-space typeform-share button" data-mode="drawer_right" data-submit-close-delay="2" target="_blank">En savoir plus</a>
     <p class="rubrique-description text-center top-space">Chaque formation se compose de parties théoriques, mais surtout de mises en situation pratiques.</p>
     <p class="description text-center">(Désolé, mais vous ne resterez pas assis devant des slides. Nous vous ferons travailler 🤓)</p>
   </div>
@@ -129,7 +129,7 @@
     </div>
     <div>
       <p class="rubrique-description font-weight-bold">Avec nos formations, en physique ou à distance, vous possèderez l'ensemble des outils et processus qui vous permettrons d'être plus efficace dans la gestion de vos projets digitaux.</p>
-      <%= link_to 'Revoir nos formations', './#nos-formations', class: 'cta-secondary-white ml-0' %>
+      <%= link_to 'Revoir nos formations', formations_path(anchor:'nos-formations'), class: 'cta-secondary-white ml-0' %>
     </div>
   </div>
 </div>

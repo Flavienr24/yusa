@@ -1,11 +1,13 @@
 <div class="bg-black-gradient full-screen mb-4">
   <div class="content-container home-banner z-index-50 pb-2">
     <div class="hero-title">Hello !<br>Bienvenue chez Yusa.</div>
-    <%= image_tag 'arrow-d-white.svg', class: 'mt-5 mb-2' %>
+   <%= link_to about_path(anchor:'start'), class: 'center-item' do %>
+   <%= image_tag 'arrow-d-white.svg', class: 'mt-5 mb-2' %>
+   <% end %>
   </div>
 </div>
 <%= image_tag "bg-logo-black.svg", class: 'bg-logo-overflow' %>
-<div class="layout-container content-container row flex-column">
+<div id='start' class="layout-container content-container row flex-column">
   <div class="col-12 col-lg-8 smooth-text" style="display: none;">
     <h1 class="big-title mt-5">Acteur de l'innovation digitale</h1>
     <p class="rubrique-description">

@@ -4,14 +4,16 @@
   <div class="content-container home-banner pb-1">
     <h1 class="hero-title left-align-80 animated-letter txt anim-text-flow">Transformez rapidement vos idées en produit digital.</h1>
     <h2 class="rubrique-description mt-4 left-align-80">Nous réalisons les produits digitaux qu’attendent vos utilisateurs. Rapidement et simplement.</h2>
+    <%= link_to root_path(anchor:'start'), class: 'center-item' do %>
     <%= image_tag 'arrow-d-black.svg', class: 'top-space mb-2' %>
+    <% end %>
   </div>
 </section>
 <!-- Start-card -->
-<div class="bg-black min-100-vh card-rounded overlay top-space">
+<div id='start' class="bg-black min-100-vh card-rounded overlay top-space">
   <div class="content-container">
     <!-- Expertises -->
-    <div class="grid-2c bottom-space">
+    <div id='start' class="grid-2c bottom-space">
       <div class="bottom-space pt-2">
         <h2 class="rubrique-title">Chez Yusa nous concevons, testons et développons rapidement vos idées de sites web ou d'applications pour créer le produit digital que vos utilisateurs désirent.</h2>
         <h3 class="rubrique-description mt-4">Passez de l'idée au produit, sans risque, sans contrainte et en maîtrisant votre budget.</h3>

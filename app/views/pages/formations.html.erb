@@ -3,7 +3,9 @@
     <div class="hero-title">Yus'Academy</div>
     <div class="rubrique-description mt-4 left-align-80">Des formations basées sur vos propres sujets. Faite d'une pierre deux coups : formez vos équipes et accélérez vos projets.</div>
     <a href="https://form.typeform.com/to/k3i4jYIv" class="cta-primary btn-left-xl fixed-cta-mobile top-space typeform-share button" data-mode="drawer_right" data-submit-close-delay="2" target="_blank">En savoir plus</a>
+    <%= link_to formations_path(anchor:'nos-formations'), class: 'center-item' do %>
     <%= image_tag 'arrow-d-white.svg', class: 'mt-5 mb-2' %>
+    <% end %>
   </div>
 </div>
 <%= image_tag "bg-logo-black.svg", class: 'bg-logo-overflow' %>

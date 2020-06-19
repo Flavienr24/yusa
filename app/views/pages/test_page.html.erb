@@ -2,11 +2,14 @@
   <div class="content-container home-banner z-index-50">
     <h1 class="hero-title">Hello !<br>Bienvenue chez Yusa.</h1>
     <%= link_to 'concrétisez votre idée', "#", class: 'cta-primary fixed-cta-mobile' %>
+    <%= link_to test_page_path(anchor:'start'), class: 'center-item' do %>
+      <%= image_tag 'arrow-d-white.svg', class: 'top-space mb-2' %></a>
+    <% end %>
   </div>
 </div>
 <%= image_tag "bg-logo-black.svg", class: 'bg-logo-overflow' %>
 <div class="layout-container content-container">
-  <div class="services-container ">
+  <div id="start" class="services-container">
     <ul class="list-no-style domain-list align-self-start">
       <li class="button_slide slide_right"><a id="dom1" class="domain p-bold" data-toggle="collapse" href="#serviceOne" role="button" aria-expanded="true" aria-controls="serviceOne">Stratégie digitale</a></li>
       <li class="button_slide slide_right"><a id="dom2"class="domain p-bold" data-toggle="collapse" href="#serviceTwo" role="button" aria-expanded="false" aria-controls="serviceTwo">Expérience utilisateur</a></li>

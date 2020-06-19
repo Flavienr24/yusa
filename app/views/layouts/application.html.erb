@@ -26,18 +26,18 @@
           <ul id="menu">
             <div id="yusa-logo-menu">
               <%= link_to root_path do %>
-              <%= image_tag("logo-full.svg", alt: 'logo yusa') %>
+              <%= image_tag("monograme-black.svg", alt: 'logo yusa') %>
               <% end %>
             </div>
             <div class="list-menu">
               <div class="link-menu">
-                <a href="/#offres"><li>Concrétisez vos projets</li></a>
+                <a href="/#offres"><li>Nos offres</li></a>
                 <a href="/formations"><li>Nos formations</li></a>
                 <a href="/about"><li>À propos</li></a>
               </div>
               <div class="top-space">
                 <div class="big-title pb-4 pt-4">Vous avez un projet ?</div>
-                <div class="rubrique-description bottom-space">Echangeons !</div>
+                <div class="rubrique-description mb-5">Echangeons !</div>
                 <a class="contact-email" href="mailto:contact@yusa.digital"><u>contact@yusa.digital</u></a>
                 <% if admin_signed_in? && current_admin.id == 1 %>
                 <%= link_to 'Log out', destroy_admin_session_path, method: :delete, class: "d-inline-block mt-3" %>

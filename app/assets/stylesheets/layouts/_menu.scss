@@ -115,10 +115,23 @@
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
+#menu {
+  & li {
+    padding: 0.6rem 0.5rem;
+    margin: 0.8rem 0px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: fit-content;
+  }
+  & a {
+    font-size: 1.375em;
+    line-height: 28px;
+  }
+  & li:hover {
+    font-weight: 700;
+    background-color: $black;
+    color: white;
+  }
 }
 
 #menuToggle input:checked ~ ul
@@ -139,26 +152,14 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-
-   & li {
-    padding: 2vh 0;
-    font-size: 22px;
-  }
-  & a {
-    font-weight: 200;
-    font-size: 1.375em;
-    line-height: 28px;
-  }
-  & a:hover {
-    font-weight: 700;
-  }
 }
+
 
 #yusa-logo-menu {
   width: 20%;
   min-width: 100px;
   max-width: 150px;
   & img {
-    max-width: 100%;
+    max-width: 50%;
   }
 }

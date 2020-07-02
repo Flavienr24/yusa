@@ -12,29 +12,59 @@
     <%= image_tag 'arrow-d-black.svg', class: 'mb-5' %>
     <% end %>
   </div>
-  <div id='start' class="content-container">
-    <h2 class="rubrique-title text-center top-space">Vous souhaitez mettre le digital au centre de votre proposition de valeur ?</h2>
-    <h2 class="rubrique-title text-center mt-5">Voici comment nous pouvons vous aider</h2>
+  <div class="content-container mb-5">
+    <div id='start' class="rubrique-title text-center top-space">Vous souhaitez mettre le digital au centre de votre proposition de valeur ?</div>
+    <div class="rubrique-title text-center mt-3 mb-5">Voici comment nous pouvons vous aider</div>
   </div>
-  <div class="grid-3c">
-    <div class="card-white">
-      image
-      <h2 class="rubrique-title">Conseil en innovation digitale</h2>
-      <p>Nous embarquons à vos côtés pour accompagner la transformation de votre organisation, du cadrage à la mise en oeuvre opérationnelle.</p>
-    </div>
-    <div class="card-white">
-      image
-      <h2 class="rubrique-title">Product Design Sprint</h2>
-      <p>Passez de l'idée à l'action en un rien de temps grâce à la célèbre méthodologie de Google Venture. 5 jours chrono pour imaginer, concevoir et tester un nouveau produit.</p>
-    </div>
-    <div class="card-white">
-      image
-      <h2 class="rubrique-title">No-Code Lab</h2>
-      <p>Lancez rapidement de nouvelles idées auprès de vos utilisateurs et identifier celles qui vont accélérer vos résultats. Nous prototypons rapidement des produits digitaux en No-code pour valider leur adéquation avec les utilisateurs.</p>
+  <div class="bg-black min-100-vh card-rounded">
+    <div class="content-container pt-0 mt-2">
+      <div class=" top-overlay-130">
+        <div class="grid-3c">
+          <div class="card-white">
+            <%= image_tag "icons/icon-conseil.svg", class: 'icon-height-20 my-4', alt: 'Icon conseil innovation digital' %>
+            <h2 class="mb-3">Conseil en innovation digitale</h2>
+            <p>Nous embarquons à vos côtés pour accompagner la transformation de votre organisation, du cadrage à la mise en oeuvre opérationnelle.</p>
+          </div>
+          <div class="card-white">
+            <%= image_tag "icons/icon-ds.svg", class: 'icon-height-20 my-4', alt: 'Icon Design Sprint' %>
+            <h2 class="mb-3">Product Design Sprint</h2>
+            <p>Passez de l'idée à l'action en un rien de temps grâce à la célèbre méthodologie de Google Venture. 5 jours chrono pour imaginer, concevoir et tester un nouveau produit.</p>
+          </div>
+          <div class="card-white">
+            <%= image_tag "icons/icon-nocode.svg", class: 'icon-height-20 my-4', alt: 'Icon No-Code Lab' %>
+            <h2 class="mb-3">No-Code<br>Lab</h2>
+            <p>Lancez rapidement de nouvelles idées auprès de vos utilisateurs et identifier celles qui vont accélérer vos résultats. Nous prototypons rapidement des produits digitaux en No-code pour valider leur adéquation avec les utilisateurs.</p>
+          </div>
+        </div>
+        <%= link_to 'concrétisez votre idée', "https://form.typeform.com/to/yAbF7ePP", target: "_blank", onclick: "ga('send', 'event', { eventCategory: 'cta', eventAction: 'click', eventLabel: 'cta_landing_home'});", class: 'cta-primary fixed-cta-mobile mt-5' %>
+      </div>
+      <div class="rubrique-title center-item top-space">Ils nous ont confié leurs projets digitaux</div>
+      <!-- clients -->
+      <div class="content-container">
+        <div class="d-flex justify-content-around">
+          <div class="justify-content-between grid-logo-clients align-items-center">
+            <%= image_tag "clients/sg-logo.png", alt: "société générale", class: 'm-4' %>
+            <%= image_tag "clients/cdn-logo.png", alt: "crédit du nord", class: 'm-4' %>
+            <%= image_tag "clients/enx-logo.png", alt: "euronext", class: 'm-4' %>
+            <%= image_tag "clients/gnrl-logo.png", alt: "generali france", class: 'm-4' %>
+          </div>
+          <div class="justify-content-between grid-logo-clients align-items-center">
+            <%= image_tag "clients/paca-logo.png", alt: "région Sud", class: 'm-4' %>
+            <%= image_tag "clients/lcl-logo.png", alt: "LCL banque assurance", class: 'm-4' %>
+            <%= image_tag "clients/lpa-logo.png", alt: "la parisienne assurance", class: 'm-4' %>
+            <%= image_tag "clients/bmfs-logo.png", alt: "BMW financial services", class: 'm-4' %>
+          </div>
+        </div>
+      </div>
+      <h3 class="big-title text-center mt-5 top-space">Prototyper, Tester, Recommencer.</h3>
+      <p class="rubrique-description text-center">Nous sommes un lab d'expérimentation digitales.<br>A partir de vos objectifs business, nous émettons des hypothèses et lançons des sprints de 2 à 4 semaines pour prototyper, tester et créer les produits digitaux qui seront en mesure d'apporter de la valeur à vos utilisateurs.</p>
+      <%= image_tag "illustrations/graph-methodo.svg", alt: "Illustration sprint méthodologie", class: 'center-item top-space bottom-space' %>
     </div>
   </div>
-  <div class="bg-black min-100-vh card-rounded overlay top-space">
-  <div class="content-container">
+
+<!-- HERE -->
+
+
     <!-- Expertises -->
     <div id='start' class="grid-2c bottom-space">
       <div class="bottom-space pt-2">

@@ -18,6 +18,10 @@
   width: 50%;
 }
 
+.width-40-xl  {
+  width: 40%;
+}
+
 .center-item {
   text-align: center;
   margin: 0px auto;
@@ -45,11 +49,12 @@
 }
 
 .home-banner {
-  height: 92vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
+  margin-top: 4rem;
 }
 
 .z-index-30 {
@@ -67,8 +72,7 @@
 }
 
 .full-screen {
-  height: 99vh;
-  min-height: 560px;
+  min-height: 100vh;
   position: relative;
 }
 

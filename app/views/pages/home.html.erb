@@ -1,16 +1,25 @@
 <!-- Content container wrapped -->
-<section class="bg-light-gradient full-screen">
-  <%= image_tag "bg-logo-light.svg", class: 'bg-logo-light', alt: 'background logo yusa' %>
-  <div class="content-container home-banner pb-1">
-    <h1 class="hero-title left-align-80 animated-letter txt anim-text-flow">Transformez rapidement vos idées en produit digital.</h1>
-    <h2 class="rubrique-description mt-4 left-align-80">Nous réalisons les produits digitaux qu’attendent vos utilisateurs. Rapidement et simplement.</h2>
+<section class="bg-light-gradient">
+    <div class="full-screen content-container home-banner pb-1">
+    <div class="d-flex justify-content-between">
+      <div class="justify-content-between w-75 pt-4">
+        <h2 class="rubrique-title animated-letter txt anim-text-flow">Nous créons de la valeur pour vos utilisateurs en transformant rapidement vos idées en produit digital.</h2>
+        <h1 class="rubrique-description w-75">Yusa, Conseil en innovation digitale et Product Lab</h1>
+        <%= link_to 'concrétisez votre idée', "https://form.typeform.com/to/yAbF7ePP", target: "_blank", onclick: "ga('send', 'event', { eventCategory: 'cta', eventAction: 'click', eventLabel: 'cta_landing_home'});", class: 'cta-primary ml-0 fixed-cta-mobile' %>
+      </div>
+      <%= image_tag "illustrations/home-illustr.svg", class: 'width-40-xl mh-100', alt: 'Yusa home illustration' %>
+    </div>
     <%= link_to root_path(anchor:'start'), class: 'center-item' do %>
-    <%= image_tag 'arrow-d-black.svg', class: 'top-space mb-2' %>
+    <%= image_tag 'arrow-d-black.svg', class: 'mb-5' %>
     <% end %>
+  </div>
+  <div id='start' class="content-container">
+    <h2 class="rubrique-title text-center top-space">Vous souhaitez mettre le digital au centre de votre proposition de valeur ?</h2>
+    <h2 class="rubrique-title text-center mt-5">Voici comment nous pouvons vous aider</h2>
   </div>
 </section>
 <!-- Start-card -->
-<div id='start' class="bg-black min-100-vh card-rounded overlay top-space">
+<div class="bg-black min-100-vh card-rounded overlay top-space">
   <div class="content-container">
     <!-- Expertises -->
     <div id='start' class="grid-2c bottom-space">

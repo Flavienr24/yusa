@@ -50,6 +50,12 @@
   }
 }
 
+.card-white {
+  background: #FAFAFA;
+  box-shadow: 0px 4px 55px rgba(0, 0, 0, 0.08);
+  padding: 1rem 2rem;
+}
+
 .card-formation {
   @extend .card-methode;
   display: flex;

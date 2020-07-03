@@ -59,6 +59,50 @@ function displayServ(domainID, servID) {
 };
 
 
+// ============= display on mouseover ===========
+
+// récupérer les div qui contiennent les éléments à animer
+const hoverTrigger =document.querySelectorAll('.hovertrigger');
+// récupérer l'élément au hover
+for (let i = 0 ; i < hoverTrigger.length; i++) {
+   let itemHover = hoverTrigger[i];
+// lancer les fonctions quand hover et out
+   itemHover.addEventListener('mouseenter' , displayItem);
+   itemHover.addEventListener('mouseleave' , hideItem);
+ }
+
+function displayItem(event) {
+  let itemHovered = event.target;
+  let itemToDisplay = itemHovered.querySelector('.displayhover');
+  itemToDisplay.style.display='';
+
+  // rechercher si il y a un élément à cacher
+  if(itemHovered.querySelector('.hidehover') == null) {
+  // si null, il ne fait rien et ne tombe pas en erreur
+  } else {
+  // indentifier l'élément à cacher
+    let itemToHide = itemHovered.querySelector('.hidehover');
+  // paramètrer le style
+    itemToHide.style.opacity='0';
+    itemToHide.style.position='fixed';
+  };
+
+};
+
+function hideItem(event) {
+  let itemHovered = event.target;
+  let itemToDisplay = itemHovered.querySelector('.displayhover')
+  itemToDisplay.style.display='none';
+
+  // rechercher si il y a un élément à afficher
+  if(itemHovered.querySelector('.hidehover') == null) {
+  } else {
+    let itemToHide = itemHovered.querySelector('.hidehover');
+    itemToHide.style.opacity='1';
+    itemToHide.style.position='static';
+  };
+}
+
 
 
 

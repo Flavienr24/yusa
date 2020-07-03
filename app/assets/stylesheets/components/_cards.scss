@@ -65,6 +65,12 @@
   margin-bottom: 3rem;
 }
 
+.card-title-black-overleft {
+  position: relative;
+  padding: 10px 20px;
+  margin-left: -20%;
+}
+
 @media(max-width: 420px) {
   .margin-top-xs {
     margin-top: 2.4rem;

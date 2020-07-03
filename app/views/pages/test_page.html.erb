@@ -62,8 +62,6 @@
     </div>
   </div>
 </section>
-
-<!-- HERE -->
 <div class="content-container mt-5">
   <div class="grid-3c height-300 top-space mb-4">
     <div class="hovertrigger">
@@ -100,6 +98,47 @@
     </div>
   </div>
 </div>
+
+
+<div class="content-container pt-0">
+  <h2 class="big-title">Nos réalisations</h2>
+  <div id="carousel-real" class="carousel slide bottom-space" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex">
+          <%= image_tag "realisations/exemple.jpg", class: "d-block w-50", alt: "" %>
+          <div class="mt-4">
+            <h3 class="rubrique-title bg-black w-100 card-title-black-overleft">Titre 1 mollit non deserunt ullamco est</h3>
+            <p class="rubrique-description pl-4 mt-4">Para 1 mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex">
+          <%= image_tag "realisations/exemple2.jpg", class: "d-block w-50", alt: "" %>
+          <div class="mt-4">
+            <h3 class="rubrique-title bg-black w-100 card-title-black-overleft">Titre 2 minim mollit non deserunt ullamco est</h3>
+            <p class="rubrique-description pl-4 mt-4">Para 2 minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>      </div>
+        </div>
+      <div class="carousel-item">
+        <div class="d-flex">
+          <%= image_tag "realisations/exemple3.jpg", class: "d-block w-50", alt: "" %>
+          <div class="mt-4">
+            <h3 class="rubrique-title bg-black w-100 card-title-black-overleft">Titre 3 minim mollit non deserunt ullamco est</h3>
+            <p class="rubrique-description pl-4 mt-4">Para 3 minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>      </div>
+        </div>
+    </div>
+    <ol class="carousel-indicators mt-4">
+      <li data-target="#carousel-real" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-real" data-slide-to="1"></li>
+      <li data-target="#carousel-real" data-slide-to="2"></li>
+    </ol>
+  </div>
+  <a href="https://form.typeform.com/to/yAbF7ePP" class="cta-primary-black typeform-share button hidden-mobile mb-5" data-mode="drawer_right" data-submit-close-delay="2" target="_blank" onClick="ga('send', 'event', { eventCategory: 'cta', eventAction: 'click', eventLabel: 'cta_methode_home'});">En savoir plus</a>
+</div>
+
     <!-- Expertises -->
     <div id='start' class="grid-2c bottom-space">
       <div class="bottom-space pt-2">
@@ -173,4 +212,54 @@
       </div>
     </div>
     <%= link_to 'Caché sur mobile ?', "#", class: 'cta-primary hidden-mobile' %>
+  </div>
+  <div class="bg-light">
+    <div class="content-container">
+      <div class="mt-5 top-space bottom-space">
+        <h2 class="big-title mb-5">NOTRE MÉTHODE</h2>
+        <div class="grid-2c">
+          <div class="card-methode">
+            <h3>1. Kickstart</h3>
+            <p class="pt-2">Notre première rencontre. Nous prenons connaissance de votre problématique, nous identifions les dépendances et déterminons les objectifs business à atteindre.</p>
+          </div>
+          <div class="card-methode margin-top-xs">
+            <h3>2. Prototype</h3>
+            <p class="pt-2">Passer de l'idée au concret pour tester rapidement le "User Fit" de votre nouveau produit digital. Application réelle ou maquettes fonctionnelles, nous mettons en place le meilleur dispositif pour votre besoin.</p>
+          </div>
+        </div>
+        <div class="grid-2c top-space">
+          <div class="card-methode">
+            <h3>3. Validation</h3>
+            <p class="pt-2">Nous rencontrons vos utilisateurs pour qu'ils testent le produit. Leurs retours nous permettent de valider la réalisation ou d'expérimenter d'autres hypothèses.</p>
+          </div>
+          <div class="card-methode margin-top-xs">
+            <h3>4. Exécution</h3>
+            <p class="pt-2">En fonction du besoin et du périmètre, nous vous accompagnons dans le développement et la gestion de votre produit digital.</p>
+          </div>
+        </div>
+      </div>
+      <a href="https://form.typeform.com/to/yAbF7ePP" class="cta-primary-black typeform-share button hidden-mobile mb-5" data-mode="drawer_right" data-submit-close-delay="2" target="_blank" onClick="ga('send', 'event', { eventCategory: 'cta', eventAction: 'click', eventLabel: 'cta_methode_home'});">On démarre ?</a>
+      <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    </div>
+    <div class="content-container">
+      <div class="mt-5">
+        <h2 class="hero-title text-center mb-5">In Prototype We Trust!</h2>
+        <div class="row-to-column">
+          <%= image_tag "illustrations/create.svg", alt: "concrétiser vos idées" %>
+          <p class="rubrique-description">Pour concrétiser rapidement vos idées et vos projets digitaux, sans écrire une ligne de code.</p>
+        </div>
+        <div class="row-to-column">
+          <%= image_tag "illustrations/organize.svg", alt: "sans risque" %>
+          <p class="rubrique-description">Pour lancer un produit numérique sans risque et avec un budget limité.</p>
+        </div>
+        <div class="row-to-column">
+          <%= image_tag "illustrations/user_feedback.svg", alt: "comportements utilisateur" %>
+          <p class="rubrique-description">Pour connaitre le comportement de vos utilisateurs et agir en conséquence.</p>
+        </div>
+        <div class="row-to-column">
+          <%= image_tag "illustrations/development.svg", alt: "développements projet" %>
+          <p class="rubrique-description">Pour sécuriser une stratégie digitale et poursuire le développement d’un projet.</p>
+        </div>
+      </div>
+    </div>
   </div>

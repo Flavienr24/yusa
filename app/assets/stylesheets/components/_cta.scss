@@ -110,6 +110,14 @@
   transition: 500ms ease all;
 }
 
+.fa-chevron-left{
+  color: $black;
+}
+
+.fa-chevron-right{
+  color: $black;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -145,6 +153,13 @@
 
 .btn-left-xl {
   margin-left: 0px;
+}
+
+.carousel-indicators li {
+  background-color: black;
+  height: 5px;
+  width: 35px;
+  margin: 0px 10px;
 }
 
 // ----------

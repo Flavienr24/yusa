@@ -26,8 +26,8 @@
   width: 40%;
 }
 
-.height-300 {
-  height: 300px;
+.height-50vh {
+  height: 52vh;
 }
 
 
@@ -172,6 +172,7 @@
 
   .home-banner {
     margin-top: 50px;
+    min-height: 80vh;
   }
 
   .grid-2c {
@@ -196,7 +197,7 @@
     width: 15%;
   }
 
-  .height-300 {
+  .height-50vh {
     height: auto;
   }
 
@@ -342,7 +343,7 @@
     grid-template-columns: 1fr;
   }
 
-  .height-300 {
+  .height-50vh {
     height: auto;
   }
 

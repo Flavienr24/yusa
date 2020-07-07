@@ -1,47 +1,54 @@
-<div class="bg-black-gradient full-screen mb-4">
+<div class="bg-black-gradient full-screen">
   <div class="content-container home-banner z-index-50 pb-2">
     <div class="hero-title">Hello !<br>Bienvenue chez Yusa.</div>
-   <%= link_to about_path(anchor:'start'), class: 'center-item' do %>
-   <%= image_tag 'arrow-d-white.svg', class: 'mt-5 mb-2' %>
-   <% end %>
+    <%= link_to about_path(anchor:'start'), class: 'center-item' do %>
+    <%= image_tag 'arrow-d-white.svg', class: 'mt-5 mb-2' %>
+    <% end %>
   </div>
 </div>
 <%= image_tag "bg-logo-black.svg", class: 'bg-logo-overflow' %>
-<div id='start' class="layout-container content-container row flex-column">
-  <div class="col-12 col-lg-8 smooth-text">
-    <h1 class="big-title mt-5">Acteur de l'innovation digitale</h1>
-    <p class="rubrique-description">
-      Démarrer petit pour accélérer, expérimenter, se tromper, comprendre et recommencer. Cet état d'esprit longtemps chasse gardée des start-ups commence doucement à intégrer les grandes organisations. Appelez le comme vous voulez (lean, agile, design thinking...), l'important c'est qu'il vous permet d'avancer et de concrétiser.
-    </p>
-  </div>
-  <div class="col-12 col-lg-8 self-flex-end mt-5 top-space bottom-space smooth-text">
-    <h2 class="big-title mt-5">Il n'y a pas de recette miracle, simplement de bons outils</h2>
-    <p class="rubrique-description">
-      Chez Yusa nous sommes en quelque sorte product manager, UX designer et développeur. Mais ce qui fait notre force ce sont les méthodes et les outils employés pour réaliser vos projets. Analyse de données, prototypage d'interfaces, conception d'applications no-code... de nombreuses solutions existent aujourd'hui pour concrétiser des idées en expérimentations, puis en produits opérationnels. Alors arrêtez de planifier et commencez à tester.
-    </p>
-  </div>
-</div>
-<div class="content-container grid-2c bottom-space">
-  <div class="title-paragraph">
-    <h2 class="big-title">Toujours proche de vos utilisateurs</h2>
-    <h3 class="smooth-text rubrique-description">
-    La parole de ceux qui utilisent votre produit ou suivent vos processus regorge d'informations à forte valeur ajoutée. Et pourtant leurs avis sont encore trop souvent négligés ou mis de côté. Notre accompagnement s'appuie toujours sur des données de marchés, sur vos utilisateurs, et non sur des suppositions ou des tendances qui n’ont jamais été vérifiées.
-    </h3>
-  </div>
-  <div class="form-card">
-    <h3>Vous avez un projet ?</h3>
-    <p class="rubrique-description pb-3">Echangeons.</p>
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-    <script>
-    hbspt.forms.create({
-    portalId: "7638941",
-    formId: "66fba0ef-d253-4466-96f7-8045619cce88"
-    });
-    </script>
+<div class="bg-light">
+  <div class="layout-container content-container">
+    <h1 id='start' class="text-center smooth-text mt-5 pt-4 rubrique-title bg-black px-2 py-4">"La mise en place d’une stratégie centrée sur l'utilisateur a le potentiel de multiplier par 5 les taux de conversion."</h1>
+    <div class="d-flex flex-column">
+      <h2 class="mt-5 top-space bottom-space left-align-60 rubrique-title">Malgrès cela, seulement la moitié des organisations teste leur expérience utilisateur.</h2>
+      <h2 class="mt-4 top-space bottom-space self-flex-end text-right left-align-60 rubrique-title">Pourtant 85% des problèmes liés à l’expérience utilisateurs peuvent être repérés en menant un test auprès de 5 utilisateurs seulement.</h2>
+      <h2 class="mt-4 top-space bottom-space left-align-60 rubrique-title">Et la résoulution d'un problème lié à l’UX en phase de développement coute 10 fois plus que de le résoudre durant la phase de conception...</h2>
+      <h2 class="mt-4 top-space bottom-space self-flex-end text-right left-align-60 rubrique-title">...et 100 fois plus lorsque le produit ou service est mis sur le marché.</h2>
+      <%= link_to 'on démarre ?', "https://form.typeform.com/to/yAbF7ePP", target: "_blank", onclick: "ga('send', 'event', { eventCategory: 'cta', eventAction: 'click', eventLabel: 'cta_landing_about'});", class: 'cta-primary fixed-cta-mobile mt-5' %>
+      <%= image_tag "illustrations/user_feedback.svg", class: '' %>
+    </div>
   </div>
 </div>
-<div class="bg-light top-space">
-  <div class="content-container grid-2c top-space bottom-space">
+<div class="layout-container content-container">
+  <div class="left-align-60 top-space">
+    <h2 class="big-title">Notre vision</h2>
+    <p class="rubrique-description">Yusa est une initiative portée par la conviction que la transformation digitale ne doit pas être une simple transposition des processus traditionnels dans leur version dématérialisée.</p>
+    <p class="rubrique-description">L'attention doit être portée sur les usages et sur la manière dont les utilisateurs s'approprient la technologie.</p>
+    <p class="rubrique-description">Ainsi, en concentrant les efforts sur la génération de nouveaux modèles économiques, les organisations seront en mesure de créer de valeur et de se différencier sur leur marché.</p>
+  </div>
+</div>
+<div class="content-container">
+  <div class="grid-2c">
+    <div class="form-card">
+      <h3>Vous avez un projet ?</h3>
+      <p class="rubrique-description pb-3">Echangeons.</p>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+      <script>
+      hbspt.forms.create({
+      portalId: "7638941",
+      formId: "66fba0ef-d253-4466-96f7-8045619cce88"
+      });
+      </script>
+    </div>
+    <div class="d-inline-block">
+      <h2 class="big-title pt-5 pb-3">Acteur de votre croissance</h2>
+      <p class="rubrique-description">Plus de 7 années d'expérience dans le conseil en transformation digitale, Yusa vous accompagne dans vos projets d'innovation et met à votre disposition les expertises nécessaires à la réussite de votre projet.</p >
+    </div>
+  </div>
+</div>
+<div class="bg-black top-space bottom-space">
+  <div class="content-container grid-2c grid-gap-60 top-space bottom-space">
     <div>
       <h4 class="rubrique-title">
       Concevoir pour les<br>utilisateurs

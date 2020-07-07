@@ -3,8 +3,8 @@
   <div class="full-screen content-container home-banner pb-1">
     <div class="d-flex row-to-column justify-content-between">
       <div class="justify-content-between width-75-xl pt-4 text-left">
-        <h2 class="rubrique-title animated-letter txt anim-text-flow">Nous créons de la valeur pour vos utilisateurs en transformant rapidement vos idées en produit digital.</h2>
-        <h1 class="rubrique-description width-75-xl mt-4">Yusa, Conseil en innovation digitale et Product Lab</h1>
+        <h2 class="hero-title animated-letter txt anim-text-flow">Transformez rapidement vos idées en produit digital.</h2>
+        <h1 class="rubrique-description width-75-xl mt-4">Conseil en innovation digitale et Product Lab, basé à Marseille</h1>
         <%= link_to 'concrétisez votre idée', "https://form.typeform.com/to/yAbF7ePP", target: "_blank", onclick: "ga('send', 'event', { eventCategory: 'cta', eventAction: 'click', eventLabel: 'cta_landing_home'});", class: 'cta-primary ml-0 hidden-mobile' %>
       </div>
       <%= image_tag "illustrations/home-illustr.svg", class: 'width-40-xl mh-100 mr-0', alt: 'Yusa home illustration' %>
@@ -13,14 +13,14 @@
     <%= image_tag 'arrow-d-black.svg', class: 'mb-5' %>
     <% end %>
   </div>
-  <div id='start' class="content-container mb-5">
+  <div class="content-container mb-5">
     <div class="rubrique-title text-center top-space">Vous souhaitez mettre le digital au centre de votre proposition de valeur ?</div>
     <div class="rubrique-title text-center mt-3 mb-5">Voici comment nous pouvons vous aider</div>
   </div>
   <div class="bg-black min-100-vh card-top-rounded">
     <div class="content-container pt-0 mt-2">
       <div id="offers" class=" top-overlay-130">
-        <div class="grid-3c">
+        <div id='start' class="grid-3c">
           <div class="card-white">
             <%= image_tag "icons/icon-conseil.svg", class: 'icon-height-20 my-4', alt: 'Icon conseil innovation digital' %>
             <h2 class="mb-3">Conseil en innovation digitale</h2>

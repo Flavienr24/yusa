@@ -1,23 +1,43 @@
-<div class="content-container">
-    <h1 class='rubrique-title'><%= @article.title %></h1>
-    <span class="description"><%= @article.created_at %></span>
+<div class="bg-black-gradient">
+  <div class="content-container home-banner top-space">
+    <h1 class="hero-title width-75-xl z-index-50 mt-5"><%= @article.title %></h1>
+    <p class="description pt-4"><%= l @article.created_at, locale: :fr, format: "%d %B %Y" %></p>
+    <%= image_tag(@article.main_image, class: 'intro-image') if @article.main_image.attached? %>
+  </div>
 </div>
-<%= image_tag(@article.main_image, class: 'full-width') if @article.main_image.attached? %>
-
 <div class="content-container">
-<span class="full-width"><%= @article.body %></span>
-
-<% if admin_signed_in? && current_admin.id == 1 %>
-  <%= link_to 'Edit', edit_article_path(@article) %> |
-<% end %>
+  <div class="article-container mt-5 bottom-space">
+    <%= @article.body %>
+    <% if admin_signed_in? && current_admin.id == 1 %>
+      <%= link_to 'Edit', edit_article_path(@article), class: 'mt-4' %>
+    <% end %>
+  </div>
+</div>
+<div class="bg-light">
+  <div class="content-container grid-2c top-space">
   <!-- Index first 3 articles -->
-  <% @articles.limit(3).each do |a| %>
-    <div class="card-article">
-      <%= image_tag(a.main_image, class: 'full-width') if a.main_image.attached? %>
-      <h3><%= a.title %></h3>
-      <span class="description"><%= l(a.created_at, locale: :fr, format: "%d %B %Y") %></span>
-    </div>
-  <% end %>
-    <%= link_to 'Voir plus', articles_path, class: 'cta-primary' %>
+  <div>
+    <h3 class="rubrique-title mb-5">D’autres articles qui pourraient vous intéresser.</h3>
+    <% @articles.limit(4).each do |a| %>
+      <%= link_to article_path(a) do %>
+        <div class="card-article mb-5">
+          <h3 class="rubrique-description"><%= a.title %></h3>
+          <p class="description mt-3"><%= l(a.created_at, locale: :fr, format: "%d %B %Y") %></p>
+        </div>
+      <% end %>
+    <% end %>
+    <%= link_to 'Voir plus', articles_path, class: 'cta-primary-black mb-4' %>
+  </div>
+  <div class="form-card">
+    <h3>Vous avez un projet ?</h3>
+    <p class="rubrique-description pb-3">Echangeons.</p>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+    <script>
+    hbspt.forms.create({
+    portalId: "7638941",
+    formId: "66fba0ef-d253-4466-96f7-8045619cce88"
+    });
+    </script>
+  </div>
+  </div>
 </div>
-

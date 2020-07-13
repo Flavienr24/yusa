@@ -79,6 +79,14 @@
   margin-left: -20%;
 }
 
+.card-article {
+  border-left: 1px solid $black;
+  padding-left: 1rem;
+  &:hover {
+    color: $black;
+  }
+}
+
 @media(max-width: 420px) {
   .margin-top-xs {
     margin-top: 2.4rem;

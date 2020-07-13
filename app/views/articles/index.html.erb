@@ -1,29 +1,35 @@
-<div class="content-container home-banner">
-  <h1 class="left-align-80">Intro sur les articles du blog qui sont écrits ici</h1>
+<div class="bg-black-gradient full-screen">
+  <div class="content-container home-banner justify-content-end z-index-50 pb-1">
+    <div class="hero-title">Le blog Yusa.</div>
+    <div class="rubrique-description mt-4 left-align-80">Les derniers articles rédigés par l’équipe Yusa.<br>Actualités et analyses sur l’innovation digitale, le product management et l’expérience utilisateur.</div>
+    <%= link_to articles_path(anchor:'first-article'), class: 'center-item' do %>
+      <%= image_tag 'arrow-d-white.svg', class: 'mt-5 mb-2' %>
+    <% end %>
+  </div>
 </div>
-
-<!-- Articles -->
-<div class="grid-cases">
-  <% @articles.each do |a| %>
-    <div class="card-client">
+<%= image_tag "bg-logo-black.svg", class: 'bg-logo-overflow' %>
+<div class="bg-light">
+  <div class="content-container top-space">
+    <span id="first-article"></span>
+    <% @articles.reverse_each do |a| %>
       <%= link_to article_path(a) do %>
-       <%= image_tag(a.main_image, class: 'full-width') if a.main_image.attached? %>
-      <div class="content-container">
+      <div class="width-75-xl mt-5 mb-5 d-flex flex-column border-bottom">
         <h2 class="rubrique-title"><%= a.title %></h2>
-
-        <!-- If user authenticate -->
-        <%= link_to 'Edit', edit_article_path(a) %>
+        <p class="description"><%= l a.created_at, locale: :fr, format: "%d %B %Y" %></p>
+        <%= image_tag(a.main_image, class: 'w-100 mb-4') if a.main_image.attached? %>
+        <div class="rubrique-description mt-4"><%= truncate(strip_tags(a.rich_text_body.to_s), length: 210) %></div>
+        <%= link_to "Lire l'article", article_path(@articles.first), class: 'my-4 underline' %>
+        <%= link_to 'Edit', edit_article_path(a), class: 'pt-4' %>
         <%= link_to 'Destroy', a, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
       <% end %>
-    </div>
-  <% end %>
+    <% end %>
+    <% if admin_signed_in? && current_admin.id == 1 %>
+      <%= link_to 'New Articles', new_article_path, class: 'cta-primary mb-5' %>
+    <% end %>
+  </div>
 </div>
 
-<% if admin_signed_in? && current_admin.id == 1 %>
-  <%= link_to 'New Articles', new_article_path %>
-<% end %>
-<%= render 'newsletter', model: @article %>
 
 
 

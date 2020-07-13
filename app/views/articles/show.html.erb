@@ -9,7 +9,10 @@
   <div class="article-container mt-5 bottom-space">
     <%= @article.body %>
     <% if admin_signed_in? && current_admin.id == 1 %>
-      <%= link_to 'Edit', edit_article_path(@article), class: 'mt-4' %>
+      <div class="d-flex mt-4">
+        <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'cta-secondary-black' %>
+        <%= link_to 'Edit', edit_article_path(@article), class: 'cta-primary' %>
+      </div>
     <% end %>
   </div>
 </div>

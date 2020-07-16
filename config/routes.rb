@@ -2,8 +2,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   devise_for :admins, path: '', path_names: { sign_in: 'admin'}
-
-  resources :cases
   resources :articles
   get 'about', to: 'pages#about', as: :about
   get 'mentions', to: 'pages#mentions', as: :mentions

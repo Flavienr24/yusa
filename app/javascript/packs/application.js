@@ -25,4 +25,3 @@ import { initUpdateNavbarOnScroll } from 'components/header';
 initUpdateNavbarOnScroll();
 import'components/scroll-animation';
 import'components/text-deploy';
-

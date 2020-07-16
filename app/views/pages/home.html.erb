@@ -191,7 +191,7 @@
   </div>
 </div>
 <!-- Blog section -->
-<% if admin_signed_in? && current_admin.id == 1 %>
+<% if admin_signed_in? && current_admin.id == 1 && Article.present? %>
   <div class="content-container pb-4">
     <div class="grid-2c top-space bottom-space border-bottom">
       <div class="d-flex flex-column">

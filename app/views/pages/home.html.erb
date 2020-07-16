@@ -216,20 +216,7 @@
 </div>
 </div>
 <!-- Cases section -->
-<div class="content-container d-none">
-<div class="grid-2c">
-  <!-- Index frist 3 clients -->
-  <% @cases.limit(5).each do |c| %>
-  <div class="card-p-bottom">
-    <%= link_to case_path(c) do %>
-    <%= image_tag(c.main_image, class: 'full-width') if c.main_image.attached? %>
-    <!-- nom client -->
-    <h3><%= c.client_name %></h3>
-    <% end %>
-  </div>
-  <% end %>
-<!-- </div>
-<div class="content-container grid-2c"> -->
+<div class="content-container grid-2c d-none">
   <% @articles.limit(3).each do |a| %>
   <div class="card-article">
     <%= image_tag(a.main_image, class: 'full-width') if a.main_image.attached? %>
@@ -237,7 +224,8 @@
     <span class="description"><%= l(a.created_at, locale: :fr, format: "%d %B %Y") %></span>
   </div>
   <% end %>
+  <%= link_to 'Voir plus', articles_path, class: 'cta-primary mb-5' %>
+
 </div>
-<%= link_to 'Voir plus', articles_path, class: 'cta-primary mb-5' %>
 </div>
 <%= render 'layouts/faq' %>

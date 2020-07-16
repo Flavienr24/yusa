@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   # get 'landing', to: 'pages#landing', as: :landing
 
   # -----------Test page for front dev-----------
-  # get 'test_page', to: 'pages#test_page', as: :test_page
+  get 'test_page', to: 'pages#test_page', as: :test_page
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
